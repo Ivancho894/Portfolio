@@ -110,7 +110,7 @@ const services = [
 ];
 
 const dataportfolio = [{
-        img: "https://www.beejaacademy.com/images/course/full-stack.webp",
+        img: "https://play-lh.googleusercontent.com/mpBm6uxkAwCTaDL7us2iG0L-Lpxb6_vUYxJ5dBMSrKFGZoION2lUY5RkJYModzngyIk",
         description: "Full Stack Developer.",
         link: "http://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=319584dfec91e05b2e18b62626d9f2aeac790e8bac4350f89d528ca7c727dced",
     },
@@ -130,7 +130,7 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "ivanserradev@gmail.com",
     YOUR_FONE: "+54 3541-566295",
-    description: "I welcome the opportunity to connect! Whether you have inquiries, project proposals, or just want to say hello, feel free to reach out through any of the following channels: Email, Phone or Social Media (mentioned on your left)",
+    description: "I welcome the opportunity to connect! Whether you have inquiries, project proposals, or just want to say hello, feel free to reach out through any of the following channels: Email, Phone or Social Media",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
