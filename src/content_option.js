@@ -110,20 +110,33 @@ const services = [
 ];
 
 const dataportfolio = [{
-        img: "https://play-lh.googleusercontent.com/mpBm6uxkAwCTaDL7us2iG0L-Lpxb6_vUYxJ5dBMSrKFGZoION2lUY5RkJYModzngyIk",
-        description: "Full Stack Developer.",
-        link: "http://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=319584dfec91e05b2e18b62626d9f2aeac790e8bac4350f89d528ca7c727dced",
-    },
-    {
-        img: "https://a.storyblok.com/f/79503/250x250/ddb3f17e97/group-3.png",
-        description: "English C2",
-        link: "https://www.efset.org/cert/rtNV2N",
-    },    
-    {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        description: "JavaScript Algorithms and Data Structures",
-        link: "https://www.freecodecamp.org/certification/fcc9ee02363-175a-457c-9679-2a27bc33fec9/javascript-algorithms-and-data-structures",
-    },
+    img: "https://play-lh.googleusercontent.com/mpBm6uxkAwCTaDL7us2iG0L-Lpxb6_vUYxJ5dBMSrKFGZoION2lUY5RkJYModzngyIk",
+    description: "E-commerce web",
+    link: "https://github.com/Ivancho894/Nautica-Rios-Web-Front",
+},
+{
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+    description: "F1 funpage",
+    link: "https://github.com/Ivancho894/cr-pi-drivers-main-ivancho894",
+   
+},
+
+];
+const datacertificates = [{
+    img: "https://play-lh.googleusercontent.com/mpBm6uxkAwCTaDL7us2iG0L-Lpxb6_vUYxJ5dBMSrKFGZoION2lUY5RkJYModzngyIk",
+    description: "Full Stack Developer.",
+    link: "http://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=319584dfec91e05b2e18b62626d9f2aeac790e8bac4350f89d528ca7c727dced",
+},
+{
+    img: "https://a.storyblok.com/f/79503/250x250/ddb3f17e97/group-3.png",
+    description: "English C2",
+    link: "https://www.efset.org/cert/rtNV2N",
+},    
+{
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+    description: "JavaScript Algorithms and Data Structures",
+    link: "https://www.freecodecamp.org/certification/fcc9ee02363-175a-457c-9679-2a27bc33fec9/javascript-algorithms-and-data-structures",
+},
 
 ];
 
@@ -148,6 +161,7 @@ export {
     meta,
     dataabout,
     dataportfolio,
+    datacertificates,
     worktimeline,
     skills,
     services,
