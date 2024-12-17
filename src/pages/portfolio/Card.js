@@ -9,11 +9,14 @@ const ExperienceCard = ({theme,experience}) => {
 
     return (
       <VerticalTimelineElement
-        
         contentStyle={{ background: theme==="dark"?'#1d1836':'#000', color: theme==="dark"?'#fff':'#000'}}
         contentArrowStyle={{ borderRight: theme==="dark"?'7px solid #232631':'7px solid #000' }}
         date={period}
-        iconStyle={{ background: iconBg }}
+        iconStyle={{ 
+          background: iconBg, // Background color of the icon
+          color: theme != 'dark' ? '#fff' : '#000', // Dynamic icon color
+          boxShadow: theme === "dark" ? '0 0 0 2px #fff' : '0 0 0 4px #232631' // Optional: Adjust boxShadow to fit theme
+        }}
         icon={
           <div className="experience-icon">
             

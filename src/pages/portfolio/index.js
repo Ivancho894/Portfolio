@@ -11,7 +11,7 @@ export const Portfolio = ({theme}) => {
   return (
     <div className="experience-page">
       <div className="">
-        <VerticalTimeline>
+        <VerticalTimeline lineColor={theme === 'dark' ? '#fff' : '#000'}>
           {workExperience.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} theme={theme} />
           ))}

@@ -64,7 +64,7 @@
 }
 
 
-.timeline-container {
-  background-color: var(--text-color); /* Dark theme line color */
+.timeline-container.dark::before {
+  background-color: #000; /* Dark theme line color */
 }
 
