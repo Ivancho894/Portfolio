@@ -78,3 +78,64 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Adds space at the bottom */
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd; /* Line color, adjust as needed */
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px; /* Gives space for text alignment */
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -6px;
+    top: 10px; /* Adjust to center the dot vertically with the text */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #333; /* Dot color, adjust as needed */
+  }
+  
+  .timeline-date {
+    font-size: 0.85em;
+    color: #999; /* Date color, adjust as needed */
+    font-weight: bold;
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    color: #fff; /* Adjust for your theme */
+  }
+  
+  .timeline-content h4 {
+    color: #bbb; /* Adjust for your theme */
+    font-weight: normal;
+  }
+  
+  .timeline-content p {
+    color: #ccc; /* Adjust for readability */
+  }
+  
+  .timeline-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* Adjust for your theme */
+    font-size: 24px; /* Adjust size as needed */
+  }
