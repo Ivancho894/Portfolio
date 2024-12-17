@@ -18,28 +18,74 @@ const dataabout = {
     title: "About Me",
     aboutme: "Skilled Full Stack Developer and 3D Designer, leveraging modern technologies to build robust applications and enhance user experiences."
 };
-// const workExperience = [
-//     {
-//         jobtitle: "Full Stack Developer",
-//         where: "Leafpress, Remote",
-//         date: "2024",
-//         description: "Enhanced UI speed and back-end processes, improving application efficiency by 30%."
-//     },
-//     {
-//         jobtitle: "Full Stack Web Developer",
-//         where: "Henry, Buenos Aires",
-//         date: "2023",
-//         description: "Developed a boat marketplace and an F1 fan page, managing both back and front-end operations."
-//     },
-//     {
-//         jobtitle: "IT Intern",
-//         where: "Municipalidad de Villa Carlos Paz",
-//         date: "2018",
-//         description: "Supported IT infrastructure, troubleshooting software and hardware issues."
-//     },
-// ];
 
 const workExperience = [
+    {
+      position: "Software Engineer",
+      company: "Leafpress",
+      period: "May 2024 - Dec 2024",
+      icon:"./United-states_flag_icon_round.svg.png",
+      points: [
+        "Played a pivotal role in enhancing both the front-end and back-end application development.",
+        "Led to a 30% improvement in user interface speed, significantly optimizing load times and reducing response delays.",
+        "Implemented advanced best practices for front-end performance and refined back-end processes.",
+        "Increased the overall efficiency of the applications.",
+        "Key achievements include reducing load times by 25%, enhancing user engagement by 20%, and utilizing cutting-edge frameworks."
+      ],
+      location: "San Francisco, United States",
+    },
+    {
+      position: "Full Stack Web Developer (Boats market place)",
+      company: "Soy Henry final project",
+      period: "November 2023 - December 2023",
+      points: [
+        "Developed both the back and front end of the platform, leveraging Figma for a clearer understanding of the client's objectives and design vision.",
+        "Managed project frameworks with Scrum, ensuring continuous improvement and client satisfaction.",
+        "Streamlined client communication, leading Scrum ceremonies, and provided mentorship within the team."
+      ],
+      icon:"./flag-for-argentina.svg",
+      location: "Buenos Aires, Argentina",
+      year: "2024",
+      demoUrl: "https://www.youtube.com/watch?v=lqReilpHGro",
+      mediaType: "video"
+    },
+    {
+      position: "Full Stack Web Developer (F1 Drivers Fun Page)",
+      company: "Soy Henry Individual Project",
+      period: "September 2023",
+      points: [
+        "Involved advanced features like filtering, external API integration, relational databases, and controlled forms to provide users with a seamless experience."
+      ],
+      icon:"./flag-for-argentina.svg",
+      location: "Buenos Aires, Argentina",
+      year: "2024",
+      demoUrl: "https://youtu.be/dCL7FZogGEY"
+    },
+    {
+      position: "Hackathon Participant",
+      company: "McDonald's and Oracle",
+      icon:"./flag-for-argentina.svg",
+      period: "April 2023",
+      points: [
+        "Collaborated in a hackathon to develop a Minimum Viable Product (MVP) for McDonald's Latin American operations.",
+        "Enhanced innovation and teamwork skills."
+      ],
+      location: "Buenos Aires, Argentina",
+      year: "2023"
+    },
+    {
+      position: "Information Technology Intern",
+      company: "Municipality of Villa Carlos Paz",
+      icon:"./flag-for-argentina.svg",
+      period: "August 2018 - October 2018",
+      points: [
+        "Provided comprehensive IT support, troubleshooting hardware, software, and ensuring smooth operation of technology infrastructure."
+      ],
+      location: "Córdoba, Argentina",
+      year: "2018"
+    }
+  ];
+const workExperience2 = [
     {
       position: "Software Engineer",
       company: "Leafpress",

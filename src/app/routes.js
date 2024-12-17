@@ -9,7 +9,7 @@ import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Certificates } from "../pages/certificates";
 
-const AnimatedRoutes = withRouter(({ location }) => (
+const AnimatedRoutes = withRouter(({ location , theme}) => (
   <TransitionGroup>
     <CSSTransition
       key={location.key}
@@ -23,7 +23,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
       <Routes location={location}>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Portfolio theme={theme} />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Home />} />
@@ -32,10 +32,10 @@ const AnimatedRoutes = withRouter(({ location }) => (
   </TransitionGroup>
 ));
 
-function AppRoutes() {
+function AppRoutes({theme}) {
   return (
     <div className="s_c">
-      <AnimatedRoutes />
+      <AnimatedRoutes theme={theme} />
       <Socialicons />
     </div>
   );

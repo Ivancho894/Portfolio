@@ -1,141 +1,70 @@
-.po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+/* Experience Card specific styles */
+.experience-card {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 5px;
+  box-shadow: var(--secondary);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
-    background: var(--secondary-color);
-    padding: 6px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--primary-color);
 }
 
-.po_item img {
-    max-width: 100%;
+.experience-card h3 {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
 }
 
-.po_item .content {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--overlay-color);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    border: 1px solid black;
+.experience-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-2);
 }
 
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
+.experience-card .experience-points {
+  padding-left: 20px;
 }
 
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+.experience-card .experience-point {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  color: var(--text-color);
 }
 
-.po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    opacity: 1;
+.experience-card .experience-point:last-child {
+  margin-bottom: 0;
 }
 
-.po_item:hover .content {
-    opacity: 1;
-    color: var(--secondary-color);
+.experience-icon {
+  /* width: 50px;
+  height: 50px; */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.po_item .content a {
-    background: var(--bg-color);
-    border: solid 1px var(--text-color);
-    padding: 4px 8px;
-    text-align: center;
-    font-size: 1rem;
+.experience-icon img {
+  width: 100%;
+  height: auto;
 }
 
-.po_item .content a:hover {
-    text-decoration: none;
-}
-
-
-.timeline {
-    position: relative;
-    padding-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 40px; /* Adds space at the bottom */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .experience-card {
+      padding: 15px;
   }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #ddd; /* Line color, adjust as needed */
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 20px; /* Gives space for text alignment */
-  }
-  
-  .timeline-dot {
-    position: absolute;
-    left: -6px;
-    top: 10px; /* Adjust to center the dot vertically with the text */
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #333; /* Dot color, adjust as needed */
-  }
-  
-  .timeline-date {
-    font-size: 0.85em;
-    color: #999; /* Date color, adjust as needed */
-    font-weight: bold;
-  }
-  
-  .timeline-content h3 {
-    margin-top: 0;
-    color: #fff; /* Adjust for your theme */
-  }
-  
-  .timeline-content h4 {
-    color: #bbb; /* Adjust for your theme */
-    font-weight: normal;
-  }
-  
-  .timeline-content p {
-    color: #ccc; /* Adjust for readability */
-  }
-  
-  .timeline-title {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #fff; /* Adjust for your theme */
-    font-size: 24px; /* Adjust size as needed */
-  }
+}
+
+
+.timeline-container {
+  background-color: var(--text-color); /* Dark theme line color */
+}
+

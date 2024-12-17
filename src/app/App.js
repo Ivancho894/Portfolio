@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -19,7 +19,10 @@ function _ScrollToTop(props) {
 }
 const ScrollToTop = withRouter(_ScrollToTop);
 
-export default function App() {
+export default function App({refreshApp}) {
+  
+  const [theme, settheme] = useState("dark");
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
@@ -33,8 +36,8 @@ export default function App() {
         />
       </div>
       <ScrollToTop>
-        <Headermain />
-        <AppRoutes />
+        <Headermain theme={theme} settheme={settheme}/>
+        <AppRoutes theme={theme} {...settheme}/>
       </ScrollToTop>
     </Router>
   );
