@@ -10,57 +10,74 @@ const introdata = {
         second: "I code cool websites",
         third: "I develop mobile apps"
     },
-    description: "Creating dynamic and responsive web solutions with a keen eye for design. Let's connect and bring your projects to life!",
+    description: "Transform your digital vision into reality with cutting-edge web solutions crafted for optimal user engagement and aesthetic precision. Harness my expertise in dynamic and responsive design to elevate your project. Ready to innovate? Let’s connect and make your ideas come to life!",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d"
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Skilled Full Stack Developer and 3D Designer, leveraging modern technologies to build robust applications and enhance user experiences."
+    aboutme: "Hello! I’m a Full Stack Developer and 3D Designer with extensive experience in creating dynamic and responsive web solutions using HTML, CSS, Python, JavaScript, React, and Node.js. I am skilled in leveraging modern technologies like Redux, ES6, and Firebase to build robust applications. My passion lies in turning innovative ideas into real-world applications with a keen eye for design."
 };
 
 const workExperience = [
-    {
-      position: "Software Engineer",
-      company: "Leafpress",
-      period: "May 2024 - Dec 2024",
-      icon:"./United-states_flag_icon_round.svg.png",
-      points: [
-        "Played a pivotal role in enhancing both the front-end and back-end application development.",
-        "Led to a 30% improvement in user interface speed, significantly optimizing load times and reducing response delays.",
-        "Implemented advanced best practices for front-end performance and refined back-end processes.",
-        "Increased the overall efficiency of the applications.",
-        "Key achievements include reducing load times by 25%, enhancing user engagement by 20%, and utilizing cutting-edge frameworks."
-      ],
-      location: "San Francisco, United States",
-    },
-    {
-      position: "Full Stack Web Developer (Boats market place)",
-      company: "Soy Henry final project",
-      period: "November 2023 - December 2023",
-      points: [
-        "Developed both the back and front end of the platform, leveraging Figma for a clearer understanding of the client's objectives and design vision.",
-        "Managed project frameworks with Scrum, ensuring continuous improvement and client satisfaction.",
-        "Streamlined client communication, leading Scrum ceremonies, and provided mentorship within the team."
-      ],
-      icon:"./flag-for-argentina.svg",
-      location: "Buenos Aires, Argentina",
-      year: "2024",
-      demoUrl: "https://www.youtube.com/watch?v=lqReilpHGro",
-      mediaType: "video"
-    },
-    {
-      position: "Full Stack Web Developer (F1 Drivers Fun Page)",
-      company: "Soy Henry Individual Project",
-      period: "September 2023",
-      points: [
-        "Involved advanced features like filtering, external API integration, relational databases, and controlled forms to provide users with a seamless experience."
-      ],
-      icon:"./flag-for-argentina.svg",
-      location: "Buenos Aires, Argentina",
-      year: "2024",
-      demoUrl: "https://youtu.be/dCL7FZogGEY"
-    },
+  {
+    position: "Software Engineer",
+    company: "Leafpress",
+    period: "May 2024 - Dec 2024",
+    icon: "./United-states_flag_icon_round.svg.png",
+    points: [
+      "Played a pivotal role in enhancing both the front-end and back-end application development.",
+      "Led to a 30% improvement in user interface speed, significantly optimizing load times and reducing response delays.",
+      "Implemented advanced best practices for front-end performance and refined back-end processes.",
+      "Increased the overall efficiency of the applications.",
+      "Key achievements include reducing load times by 25%, enhancing user engagement by 20%, and utilizing cutting-edge frameworks."
+    ],
+    location: "San Francisco, United States",
+    image: ['./666bc8c862aae7b03514dd75_Opengraph (1).png', "./United-states_flag_icon_round.svg.png"],
+    techStack: {
+      frontEnd: ["ReactJS", "Redux", "CSS", "HTML", "Tailwind"],
+      backEnd: ["NodeJS", "Firebase", "Stripe", "Google server"],
+      database: ["PostgreSQL", "Sequelize", "AWS S3", "Google Cloud", "Firestore"],
+      apis: ["GPT", "Slack", "Weather"]
+    }
+  },
+  {
+    position: "Full Stack Web Developer (Boats market place)",
+    company: "Soy Henry final project",
+    period: "November 2023 - December 2023",
+    icon: "./flag-for-argentina.svg",
+    points: [
+      "Developed both the back and front end of the platform, leveraging Figma for a clearer understanding of the client's objectives and design vision.",
+      "Managed project frameworks with Scrum, ensuring continuous improvement and client satisfaction.",
+      "Streamlined client communication, leading Scrum ceremonies, and provided mentorship within the team."
+    ],
+    location: "Buenos Aires, Argentina",
+    year: "2024",
+    demoUrl: "https://www.youtube.com/watch?v=lqReilpHGro",
+    mediaType: "video",
+    techStack: {
+      frontEnd: ["ReactJS", "Redux", "CSS", "HTML"],
+      backEnd: ["NodeJS", "Firebase", "NodeMailer", "MercadoPago"],
+      database: ["PostgreSQL", "Sequelize"]
+    }
+  },
+  {
+    position: "Full Stack Web Developer (F1 Drivers Fun Page)",
+    company: "Soy Henry Individual Project",
+    period: "September 2023",
+    points: [
+      "Involved advanced features like filtering, external API integration, relational databases, and controlled forms to provide users with a seamless experience."
+    ],
+    icon: "./flag-for-argentina.svg",
+    location: "Buenos Aires, Argentina",
+    year: "2024",
+    demoUrl: "https://youtu.be/dCL7FZogGEY",
+    techStack: {
+      frontEnd: ["ReactJS", "Redux", "CSS", "HTML"],
+      backEnd: ["NodeJS"],
+      database: ["PostgreSQL", "Sequelize"]
+    }
+  },
     {
       position: "Hackathon Participant",
       company: "McDonald's and Oracle",
@@ -72,6 +89,28 @@ const workExperience = [
       ],
       location: "Buenos Aires, Argentina",
       year: "2023"
+    },
+    {
+      position: "Restaurant Team Member",
+      company: "Vail",
+      period: "December 2021 - April 2022",
+      icon: "./United-states_flag_icon_round.svg.png",
+      points: [
+        "Orchestrated the seamless flow of operations from kitchen to table in a bustling restaurant.",
+        "Coordinated orders, ensured each dish met quality standards, and occasionally stepped into various BOH stations to assist in maintaining efficiency and quality throughout the kitchen."
+      ],
+      location: "Park City, Utah, United States"
+    },
+    {
+      position: "Sailing Instructor",
+      company: "Universidad Nacional de Córdoba",
+      period: "March 2018 - December 2018",
+      icon: "./flag-for-argentina.svg",
+      points: [
+        "Imparted knowledge to students ranging from 18 to 65 years old on sailing techniques and motorboat operation.",
+        "Conducted both theoretical and practical lessons, preparing students for a comprehensive test enabling them to captain boats up to 20 meters in length."
+      ],
+      location: "Villa Carlos Paz, Córdoba, Argentina"
     },
     {
       position: "Information Technology Intern",
@@ -161,13 +200,23 @@ const skills2 = {
 };
 
 const skills = [
-    { name: "JavaScript", value: 85 },
-    { name: "Python", value: 75 },
-    { name: "React", value: 70 },
-    { name: "Node.js", value: 65 },
-    { name: "HTML/CSS", value: 90 },
-    { name: "Scrum/Agile", value: 80 },
-    { name: "Figma", value: 75 }
+  { name: "JavaScript", value: 85 },
+  { name: "Python", value: 75 },
+  { name: "React", value: 70 },
+  { name: "Node.js", value: 65 },
+  { name: "HTML/CSS", value: 90 },
+  { name: "Scrum/Agile", value: 80 },
+  { name: "Figma", value: 75 },
+  { name: "Redux", value: 75 }, // Assuming proficiency similar to React and Figma
+  { name: "Sequelize", value: 65 }, // Based on your experience with Node.js and databases
+  { name: "Firebase", value: 70 }, // Given your backend experience
+  { name: "GPT API", value: 70 }, // Based on API integration proficiency
+  { name: "Tailwind CSS", value: 70 }, // Similar to CSS but specific framework proficiency
+  { name: "AWS", value: 65 }, // General cloud service proficiency
+  { name: "Google Cloud", value: 65 }, // Similar to AWS proficiency
+  { name: "Stripe", value: 60 }, // Payment gateway integration skill
+  { name: "Slack API", value: 65 }, // Communication tool integration skill
+  { name: "Weather APIs", value: 65 } // General API integration skill
 ];
 
 const services = [
@@ -176,9 +225,26 @@ const services = [
         description: "Expert in crafting innovative web solutions that ensure robust performance and user-friendly experiences."
     },
     {
-        title: "Agile Coaching",
-        description: "Guiding teams through Agile practices to improve workflows and enhance project delivery."
+        title: "Project Management",
+        description: "eaching and implementing Scrum and Agile frameworks, ensuring efficient project execution and team collaboration."
     },
+    {
+      title:"Cloud Technologies",
+      description:"Experienced with Google Cloud and AWS, proficient in managing services like Firebase, Firestore, and Lambda functions."
+    },
+    {
+      title:"API Integration",
+      description:"Adept at integrating and customizing APIs, including the GPT API, to enhance application functionality and AI capabilities."
+    },
+    {
+      title:"Design to Development",
+      description:"Skilled in designing UI components in Figma and translating them into fully functional web elements using JavaScript or TypeScript, complemented with CSS or Tailwind CSS."
+    },
+    {
+      title:"Collaborative Projects",
+      description:"Open to learning new technologies not mentioned here and experienced in collaborations that push the boundaries of web technology and design."
+    },
+    
 ];
 
 const dataportfolio = [
@@ -196,7 +262,7 @@ const dataportfolio = [
 
 const contactConfig = {
     YOUR_EMAIL: "serralta.ivan@gmail.com",
-    YOUR_FONE: "+03541566295",
+    YOUR_FONE: "+543541566295",
     description: "Reach out via email or phone to discuss potential projects or connect with me on LinkedIn."
 };
 

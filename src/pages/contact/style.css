@@ -43,3 +43,29 @@ button.btn.ac_btn:hover {
         transform: translateX(100%);
     }
 }
+.social-links {
+    display: flex;
+    justify-content: start;
+    gap: 10px; /* Adjust spacing between icons */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    color: var(--text-color); /* Your chosen text color */
+    background: var(--bg-color); /* Background color */
+    border-radius: 50%; /* Makes the icons circular */
+    text-align: center;
+    line-height: 40px; /* Aligns the icon vertically */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover, .social-icon:focus {
+    background-color: rgb(112, 96, 96);; /* Color when hovered */
+    text-decoration: none; /* Removes underline */
+}
+
+.social-icon i {
+    font-size: 20px; /* Icon size */
+}

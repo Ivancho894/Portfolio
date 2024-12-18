@@ -7,6 +7,11 @@
   margin-bottom: 5px;
   box-shadow: var(--secondary);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 95%; /* Adjust as necessary, could go up to 100% if needed */
+  width: auto; /* This will make the width adjust according to the content or max-width */
+  padding: 20px; /* Adjust padding to control space inside the card */
+  margin: auto; /* Center align the card if necessary */
+  margin-bottom: 10px; /* Control space between cards */
 }
 
 .experience-card:hover {
@@ -17,12 +22,12 @@
 .experience-card h3 {
   font-size: 1.75rem;
   color: var(--text-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem; /* Reduce the space below the headings */
 }
 
 .experience-card p {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   line-height: 1.6;
   color: var(--text-color-2);
 }
@@ -32,7 +37,7 @@
 }
 
 .experience-card .experience-point {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   list-style-type: disc;
   color: var(--text-color);
 }
@@ -40,31 +45,59 @@
 .experience-card .experience-point:last-child {
   margin-bottom: 0;
 }
-
+.experience-card img {
+  max-width: 100%; 
+  height: auto;
+}
 .experience-icon {
-  /* width: 50px;
-  height: 50px; */
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* Ensure this matches the style in React for consistent sizing */
+  height: 100%; /* Ensure this matches the style in React for consistent sizing */
 }
 
 .experience-icon img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
-
+/* style.css */
+.portfolio-title {
+  text-align: center;  /* Centers the title on the page */
+  color: var(--text-color);  /* Use a CSS variable or specific color */
+  margin-bottom: 20px;  /* Adds space between the title and the timeline */
+  font-size: 2rem;  /* Sets a larger font size for the title */
+}
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .experience-card {
-      padding: 15px;
+    padding: 10px; /* Less padding on smaller screens */
+    margin-bottom: 5px; /* Less space between cards on smaller screens */
+  }
+
+  .experience-card h3, .experience-card p, .experience-card .experience-point {
+    margin-bottom: 3px; /* Uniformly reduce margin-bottom for all text elements in the card */
   }
 }
-
 
 .timeline-container.dark::before {
   background-color: #000; /* Dark theme line color */
 }
 
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
