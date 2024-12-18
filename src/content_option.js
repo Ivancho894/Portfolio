@@ -39,7 +39,9 @@ const workExperience = [
       backEnd: ["NodeJS", "Firebase", "Stripe", "Google server"],
       database: ["PostgreSQL", "Sequelize", "AWS S3", "Google Cloud", "Firestore"],
       apis: ["GPT", "Slack", "Weather"]
-    }
+    },
+    info:"https://www.leafpress.ai/"
+
   },
   {
     position: "Full Stack Web Developer (Boats market place)",
@@ -59,7 +61,8 @@ const workExperience = [
       frontEnd: ["ReactJS", "Redux", "CSS", "HTML"],
       backEnd: ["NodeJS", "Firebase", "NodeMailer", "MercadoPago"],
       database: ["PostgreSQL", "Sequelize"]
-    }
+    },
+    info:"https://github.com/Ivancho894/Nautica-Rios-Web-Front"
   },
   {
     position: "Full Stack Web Developer (F1 Drivers Fun Page)",
@@ -76,7 +79,8 @@ const workExperience = [
       frontEnd: ["ReactJS", "Redux", "CSS", "HTML"],
       backEnd: ["NodeJS"],
       database: ["PostgreSQL", "Sequelize"]
-    }
+    },
+    info:"https://github.com/Ivancho894/cr-pi-drivers-main-ivancho894"
   },
     {
       position: "Hackathon Participant",
@@ -88,7 +92,8 @@ const workExperience = [
         "Enhanced innovation and teamwork skills."
       ],
       location: "Buenos Aires, Argentina",
-      year: "2023"
+      year: "2023",
+      info:"https://www.linkedin.com/feed/update/urn:li:activity:7054423571581779968/"
     },
     {
       position: "Restaurant Team Member",
@@ -99,7 +104,7 @@ const workExperience = [
         "Orchestrated the seamless flow of operations from kitchen to table in a bustling restaurant.",
         "Coordinated orders, ensured each dish met quality standards, and occasionally stepped into various BOH stations to assist in maintaining efficiency and quality throughout the kitchen."
       ],
-      location: "Park City, Utah, United States"
+      location: "Park City, Utah, United States",
     },
     {
       position: "Sailing Instructor",

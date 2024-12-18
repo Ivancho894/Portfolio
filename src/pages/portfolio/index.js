@@ -7,17 +7,10 @@ import ExperienceCard from './Card';
 import "./style.css";
 import { workExperience } from '../../content_option';
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
 
 export const Portfolio = ({ theme }) => {
   return (
-    <HelmetProvider>
       <Container>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>{meta.title} | Contact</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
         <Row className="justify-content-center mb-5 mt-3 pt-md-3">
           <Col xs={12}>
             <h1 className="display-4 mb-4 text-center">My Professional Timeline</h1>
@@ -30,6 +23,5 @@ export const Portfolio = ({ theme }) => {
           ))}
         </VerticalTimeline>
       </Container>
-    </HelmetProvider>
   );
 };

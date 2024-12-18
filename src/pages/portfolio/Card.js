@@ -5,7 +5,7 @@ import "./style.css";
 import { workExperience } from "../../content_option";
 
 const ExperienceCard = ({theme,experience}) => {
-  const { period, icon, iconBg, company, position, points,image,techStack,location} = experience
+  const { period, icon, iconBg, company, position, points,image,techStack,location,info} = experience
 
     return (
       <VerticalTimelineElement
@@ -50,6 +50,9 @@ const ExperienceCard = ({theme,experience}) => {
           )
         }
           {/* {image && image.length>0?<img src={image[0]} alt={`${company} logo`} loading="lazy" />:<></>} */}
+          {info && <a href={info} target="_blank" rel="noopener noreferrer">
+            <button className="info-button">+ Info</button>
+          </a>}
         </div>
       </VerticalTimelineElement>
     );
