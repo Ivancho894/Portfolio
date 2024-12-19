@@ -8,10 +8,7 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 import {
   FaGithub,
-  FaTwitter,
   FaLinkedin,
-  FaYoutube,
-  FaTwitch,
   FaInstagram
 } from "react-icons/fa";
 export const ContactUs = () => {

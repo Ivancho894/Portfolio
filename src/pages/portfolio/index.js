@@ -2,11 +2,10 @@
 import React from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ExperienceCard from './Card';
 import "./style.css";
 import { workExperience } from '../../content_option';
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export const Portfolio = ({ theme }) => {
   return (

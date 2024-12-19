@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import "./style.css";
-import { workExperience } from "../../content_option";
 
 const ExperienceCard = ({theme,experience}) => {
-  const { period, icon, iconBg, company, position, points,image,techStack,location,info} = experience
+  const { period, icon, company, position, points,techStack,location,info} = experience
 
     return (
       <VerticalTimelineElement
