@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { Link,useLocation} from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
@@ -11,13 +11,16 @@ const Headermain = ({theme, settheme}) => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
   };
-
+  const location = useLocation();
+  
+  // Check if the current path is '/home'
+  const isOnHomePage = location.pathname === '/';
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
+            {isOnHomePage?logotext:"HOME"}
           </Link>
           <div className="d-flex align-items-center">
           <Themetoggle theme={theme} settheme={settheme}/>

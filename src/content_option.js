@@ -20,6 +20,45 @@ const dataabout = {
 };
 
 const workExperience = [
+
+    {
+    "position": "Freelance Messaging Platform Integrator",
+    "company": "Freelance service",
+    "period": "Feb 2025",
+    "icon": "./flag-for-argentina.svg",
+    "points": [
+    "Integrated six e-commerce platforms into Respond.io, enabling seamless messaging automation.",
+    "Developed scripts to process orders, offers, and messages through Mirakl and Respond.io APIs.",
+    "Created a Google Cloud Functions system to manage scheduled message retries and failures.",
+    "Implemented Firebase Firestore for real-time message tracking and error handling.",
+    "Successfully integrated platforms such as Sprinter, Hipercalzados, Worten, Carrefour, and Decathlon."
+    ],
+    "location": "Remote",
+    "techStack": {
+    "backEnd": ["NodeJS", "Google Cloud Functions", "Firebase"],
+    "database": ["Firestore"],
+    "apis": ["Mirakl", "Miravia", "Respond.io"]
+    }
+    },
+    {
+      "position": "Freelance API Integrations Developer",
+      "company": "Freelance service",
+      "period": "Jan 2025",
+      "icon": "./flag-for-argentina.svg",
+      "points": [
+      "Developed and implemented API integration with StockX, handling authentication and data retrieval.",
+      "Built a robust authentication system using Flask and Auth0 to securely access StockX API.",
+      "Designed scripts to automate retrieval of market data, order tracking, and listing management.",
+      "Implemented a token refresh mechanism for seamless API interactions.",
+      "Optimized API calls to enhance efficiency and reduce latency in data processing."
+      ],
+      "location": "Remote",
+      "techStack": {
+      "backEnd": ["Python", "Flask", "Auth0"],
+      "database": ["Firestore"],
+      "apis": ["StockX"]
+      }
+      },
   {
     position: "Software Engineer",
     company: "Leafpress",
