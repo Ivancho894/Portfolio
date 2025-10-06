@@ -22,6 +22,28 @@ const dataabout = {
 const workExperience = [
 
     {
+    "position": "Acting CTO & Full Stack Developer",
+    "company": "OnlyGenius",
+    "period": "2024",
+    "icon": "./flag-for-argentina.svg",
+    "points": [
+      "Led the greenfield build of OnlyGenius's entire SaaS ecosystem, covering backend, frontend, automation, and infrastructure from scratch.",
+      "Architected and delivered a production-ready trading dashboard with real-time MT4/MT5 metrics, historical analytics, demo mode, and automated evaluation workflows using Next.js, React, TypeScript, Tailwind, and Zustand.",
+      "Developed an internal admin dashboard with granular role management, Prisma + PostgreSQL backend, Firebase Authentication integration, and comprehensive account controls and monitoring tools.",
+      "Implemented supporting platforms including a marketing website, custom CRM with event-driven email automation, cron-based alerting system, and an MT4 trading bridge for direct trade execution.",
+      "Set up AWS infrastructure (Lambda, EC2, S3, CloudWatch) with CI/CD pipelines, automated backups, monitoring policies, and integrated Stripe Billing for subscriptions and payments.",
+      "Recruited, mentored, and led developers while defining technical architecture, security standards, documentation, and best practices across the organization."
+    ],
+    "location": "Remote",
+    "techStack": {
+      "frontEnd": ["Next.js", "React", "TypeScript", "Tailwind", "Zustand"],
+      "backEnd": ["Node.js", "Prisma", "Stripe", "MetaApi", "Firebase"],
+      "database": ["PostgreSQL", "Railway"],
+      "cloud": ["AWS Lambda", "AWS EC2", "AWS S3", "CloudWatch"],
+      "automation": ["Cron Jobs", "Email Workflows"]
+    }
+    },
+    {
     "position": "Freelance Messaging Platform Integrator",
     "company": "Freelance service",
     "period": "Feb 2025",
