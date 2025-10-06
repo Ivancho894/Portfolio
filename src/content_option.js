@@ -22,6 +22,29 @@ const dataabout = {
 const workExperience = [
 
     {
+    "position": "CTO & Full Stack Developer",
+    "company": "OnlyGenius",
+    "period": "2023 - Presente",
+    "icon": "./flag-for-argentina.svg",
+    "points": [
+      "Asumí el rol de CTO de facto para construir desde cero toda la infraestructura tecnológica y digital de la empresa, diseñando un ecosistema SaaS escalable que soporta las operaciones de OnlyGenius.",
+      "Contraté, lideré y entrené a desarrolladores junior, definiendo arquitectura técnica, estándares de desarrollo, seguridad y procesos CI/CD para todas las áreas del producto.",
+      "Desarrollé un dashboard avanzado de trading con modo demo sin registro, integrando métricas en tiempo real y gráficos históricos mediante la API de MetaApi y cuentas conectadas a MT4/MT5.",
+      "Implementé un panel administrativo integral para gestionar usuarios, cuentas, contratos, finanzas y logs del sistema con control granular de roles y permisos sobre Firebase Authentication.",
+      "Diseñé y desplegué un CRM propio con automatización de correos y notificaciones en tiempo real, integrando FCM y colas de procesamiento para eventos masivos.",
+      "Orquesté sistemas de automatización y cron jobs para monitorear métricas de fondeo, generar alertas y mantener snapshots diarios actualizados.",
+      "Gestioné infraestructura y DevOps en AWS con pipelines CI/CD, almacenamiento seguro y planes de recuperación, incluyendo integración con Railway para bases de datos PostgreSQL.",
+      "Integré Stripe Billing para pagos y suscripciones, validando acceso a nuevas fases y ofreciendo seguimiento administrativo de renovaciones y cancelaciones."
+    ],
+    "location": "Remote",
+    "techStack": {
+      "frontEnd": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Zustand"],
+      "backEnd": ["Node.js", "Prisma", "Firebase", "AWS Lambda", "MetaApi"],
+      "database": ["PostgreSQL", "Railway"],
+      "apis": ["MetaTrader 4", "MetaTrader 5", "Firebase Cloud Messaging", "Stripe"]
+    }
+    },
+    {
     "position": "Freelance Messaging Platform Integrator",
     "company": "Freelance service",
     "period": "Feb 2025",
