@@ -46,8 +46,24 @@
   margin-bottom: 0;
 }
 .experience-card img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
+}
+
+.experience-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.experience-image {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  flex: 1 1 150px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .experience-icon {
   border-radius: 50%;
@@ -80,6 +96,12 @@
 
   .experience-card h3, .experience-card p, .experience-card .experience-point {
     margin-bottom: 3px; /* Uniformly reduce margin-bottom for all text elements in the card */
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-image {
+    flex: 1 1 100%;
   }
 }
 
