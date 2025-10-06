@@ -24,7 +24,7 @@ const workExperience = [
     {
     "position": "Acting CTO & Full Stack Developer",
     "company": "OnlyGenius",
-    "period": "2024",
+    "period": "May 2025 - present",
     "icon": "./flag-for-argentina.svg",
     "points": [
       "Led the greenfield build of OnlyGenius's entire SaaS ecosystem, covering backend, frontend, automation, and infrastructure from scratch.",
