@@ -61,7 +61,7 @@ const ExperienceCard = ({ theme, experience }) => {
         )}
         {info && (
           <a href={info} target="_blank" rel="noopener noreferrer">
-            <button className="info-button">+ Info</button>
+            <button className="info-button" style={{ width: "100%", marginTop:"5" }} >+ Info</button>
           </a>
         )}
       </div>
