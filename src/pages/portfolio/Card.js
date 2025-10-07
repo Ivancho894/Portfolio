@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import "./style.css";
 
 const ExperienceCard = ({ theme, experience }) => {
   const { period, icon, company, position, points, techStack, location, info, image } = experience;
+  const images = useMemo(() => (Array.isArray(image) ? image : image ? [image] : []), [image]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    setCurrentIndex(0);
+    if (images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images]);
+
+  const handleImageClick = () => {
+    if (!images.length) return;
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <VerticalTimelineElement
@@ -46,17 +67,45 @@ const ExperienceCard = ({ theme, experience }) => {
             {techStack.apis && <p>APIs: {techStack.apis.join(", ")}</p>}
           </div>
         )}
-        {image && (
-          <div className="experience-images">
-            {(Array.isArray(image) ? image : [image]).map((src, idx) => (
+        {!!images.length && (
+          <div className="experience-carousel">
+            <div className="carousel-image-wrapper">
               <img
-                key={idx}
-                src={src}
-                alt={`${company} showcase ${idx + 1}`}
+                src={images[currentIndex]}
+                alt={`${company} showcase ${currentIndex + 1}`}
                 className="experience-image"
                 loading="lazy"
+                onClick={handleImageClick}
               />
-            ))}
+            </div>
+            {images.length > 1 && (
+              <div className="carousel-indicators">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    className={`carousel-indicator ${idx === currentIndex ? "active" : ""}`}
+                    onClick={() => setCurrentIndex(idx)}
+                    aria-label={`Mostrar imagen ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+        {isModalOpen && (
+          <div className="image-modal" role="dialog" aria-modal="true" onClick={closeModal}>
+            <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="image-modal-close" type="button" onClick={closeModal} aria-label="Cerrar">
+                ×
+              </button>
+              <img
+                src={images[currentIndex]}
+                alt={`${company} showcase enlarged ${currentIndex + 1}`}
+                className="image-modal-img"
+                loading="lazy"
+              />
+            </div>
           </div>
         )}
         {info && (
