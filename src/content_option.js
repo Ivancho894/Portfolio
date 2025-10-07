@@ -41,7 +41,8 @@ const workExperience = [
       "database": ["PostgreSQL", "Railway"],
       "cloud": ["AWS Lambda", "AWS EC2", "AWS S3", "CloudWatch"],
       "automation": ["Cron Jobs", "Email Workflows"]
-    }
+    },
+    image: "./flag-for-argentina.svg"
     },
     {
     "position": "Freelance Messaging Platform Integrator",
