@@ -40,9 +40,17 @@ const workExperience = [
       "backEnd": ["Node.js", "Prisma", "Stripe", "MetaApi", "Firebase"],
       "database": ["PostgreSQL", "Railway"],
       "cloud": ["AWS Lambda", "AWS EC2", "AWS S3", "CloudWatch"],
-      "automation": ["Cron Jobs", "Email Workflows"]
-    }
+      "automation": ["Cron Jobs", "Email Workflows"],
+      
     },
+          image: ["./mermaid-diagram-2025-10-06-185116.png","./Screenshot 2025-10-06 at 6.31.06 PM.png"],
+          info:"https://drive.google.com/file/d/1EuKIlUwoJ2YmgLN6CqVozXZYbmDUFso-/view?usp=sharing"
+
+    },
+    // {
+    //       image: "./image_original.png",
+    // info:"https://drive.google.com/file/d/1r3ko9q8vYXpfoqEtMwVeUhjhtIsf2ldO/view?usp=sharing"
+    // },
     {
     "position": "Freelance Messaging Platform Integrator",
     "company": "Freelance service",
@@ -59,8 +67,11 @@ const workExperience = [
     "techStack": {
     "backEnd": ["NodeJS", "Google Cloud Functions", "Firebase"],
     "database": ["Firestore"],
-    "apis": ["Mirakl", "Miravia", "Respond.io"]
-    }
+    "apis": ["Mirakl", "Miravia", "Respond.io"],
+    
+  },
+  image: ["./image_original (1).png","./image_original (2).png"],
+  info:"https://drive.google.com/file/d/1TkwwuUORCbHGPow_lm1ZPb3mqE_qXdFr/view?usp=sharing"
     },
     {
       "position": "Freelance API Integrations Developer",
@@ -78,8 +89,11 @@ const workExperience = [
       "techStack": {
       "backEnd": ["Python", "Flask", "Auth0"],
       "database": ["Firestore"],
-      "apis": ["StockX"]
-      }
+      "apis": ["StockX"],
+      
+    },
+    image: ["./image_original (3).png","./image_original (4).png"],
+    info:"https://drive.google.com/file/d/1FK4aCQh6A65nPthc4nFidfouBozzrQXp/view?usp=sharing"
       },
   {
     position: "Software Engineer",
@@ -94,14 +108,14 @@ const workExperience = [
       "Key achievements include reducing load times by 25%, enhancing user engagement by 20%, and utilizing cutting-edge frameworks."
     ],
     location: "San Francisco, United States",
-    image: ['./666bc8c862aae7b03514dd75_Opengraph (1).png', "./United-states_flag_icon_round.svg.png"],
+    image: ['./64b0f881c8616ad7babbb7bb_aligned.png'],
     techStack: {
       frontEnd: ["ReactJS", "Redux", "CSS", "HTML", "Tailwind"],
       backEnd: ["NodeJS", "Firebase", "Stripe", "Google server"],
       database: ["PostgreSQL", "Sequelize", "AWS S3", "Google Cloud", "Firestore"],
       apis: ["GPT", "Slack", "Weather"]
     },
-    info:"https://www.leafpress.ai/"
+    info:"https://www.linkedin.com/company/getleafpress"
 
   },
   {

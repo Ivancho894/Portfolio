@@ -15,8 +15,8 @@ export const Portfolio = ({ theme }) => {
             <h1 className="display-4 mb-4 text-center">My Professional Timeline</h1>
             <hr className="t_border my-4 mx-auto text-left" />
           </Col>
-        </Row>
-        <VerticalTimeline lineColor={theme === 'dark' ? '#fff' : '#000'}>
+        </Row> 
+        <VerticalTimeline lineColor={theme === 'dark' ? '#fff' : '#000'} style={{ width: "100%" }}>
           {workExperience.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} theme={theme} />
           ))}
