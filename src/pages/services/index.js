@@ -4,298 +4,300 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { meta } from "../../content_option";
 
+const CALENDLY_URL = "https://calendly.com/serralta-ivan/personal";
+
 const serviceCatalog = [
   {
     id: "saas",
     icon: "🧩",
     title: "SaaS & Web Apps",
-    subtitle: "Desarrollo de plataformas SaaS y paneles administrativos completos.",
+    subtitle: "Development of SaaS platforms and complete admin dashboards.",
     services: [
       {
-        name: "Desarrollo de Dashboard SaaS",
+        name: "SaaS Dashboard Development",
         description:
-          "Implementación de paneles en Next.js con autenticación, métricas clave, suscripciones y administración.",
+          "Implementation of dashboards in Next.js with authentication, key metrics, subscriptions, and admin tools.",
         benefits: [
-          "Login seguro con gestión de usuarios",
-          "Panel de métricas en tiempo real",
-          "Cobros recurrentes integrados con Stripe",
+          "Secure login with user management",
+          "Real-time metrics panel",
+          "Recurring billing integrated with Stripe",
         ],
         technologies: ["Next.js", "Firebase", "Stripe"],
       },
       {
-        name: "Panel Admin personalizado",
+        name: "Custom Admin Panel",
         description:
-          "Control interno con gestión de roles, permisos y reportes adaptados a tu operación.",
+          "Internal control with role management, permissions, and reports tailored to your operation.",
         benefits: [
-          "Roles avanzados y auditoría",
-          "Reportes exportables",
-          "Onboarding guiado para equipos",
+          "Advanced roles and auditing",
+          "Exportable reports",
+          "Guided onboarding for teams",
         ],
         technologies: ["React", "Node.js", "Prisma", "PostgreSQL"],
       },
       {
-        name: "MVP SaaS desde cero",
-        description: "Prototipo funcional y desplegado en menos de 3 semanas.",
+        name: "SaaS MVP from Scratch",
+        description: "Functional prototype launched in under 3 weeks.",
         benefits: [
-          "Arquitectura escalable desde el inicio",
-          "Entrega continua y documentación",
-          "Incluye pipelines de CI/CD y monitoreo",
+          "Scalable architecture from day one",
+          "Continuous delivery and documentation",
+          "Includes CI/CD pipelines and monitoring",
         ],
         technologies: ["Next.js", "Node.js", "AWS", "Prisma"],
       },
     ],
     footer: {
-      focus: "Enfocado en startups, agencias y empresas sin CTO.",
-      cta: "Agendar reunión",
+      focus: "Focused on startups, agencies, and companies without a CTO.",
+      cta: "Book a call",
     },
   },
   {
     id: "automation",
     icon: "⚙️",
-    title: "Automatización y APIs",
-    subtitle: "Integraciones seguras para reducir tareas repetitivas y conectar tus sistemas.",
+    title: "Automation & APIs",
+    subtitle: "Secure integrations to cut repetitive tasks and connect your systems.",
     services: [
       {
-        name: "Integración de APIs REST / WebSockets",
+        name: "REST / WebSocket API Integrations",
         description:
-          "Conecto plataformas como Stripe, Shopify, MercadoPago o MetaTrader con tu producto.",
+          "Connect platforms like Stripe, Shopify, MercadoPago, or MetaTrader with your product.",
         benefits: [
-          "Logs centralizados y manejo de errores",
-          "Autenticación segura y escalable",
-          "Monitoreo continuo de integraciones",
+          "Centralized logs and error handling",
+          "Secure and scalable authentication",
+          "Continuous integration monitoring",
         ],
         technologies: ["Node.js", "Python", "Firebase"],
       },
       {
-        name: "Automatización de workflows SaaS",
+        name: "SaaS Workflow Automation",
         description:
-          "Sincronizo CRM, facturación y notificaciones con jobs programados y webhooks.",
+          "Sync CRM, billing, and notifications with scheduled jobs and webhooks.",
         benefits: [
-          "Ahorro de tiempo en tareas repetitivas",
-          "Reducción de errores humanos",
-          "Trazabilidad completa de procesos",
+          "Time savings on repetitive tasks",
+          "Reduced human errors",
+          "Full process traceability",
         ],
         technologies: ["Node.js", "cron jobs", "n8n", "Zapier"],
       },
       {
-        name: "Microservicios y scripts a medida",
+        name: "Custom Microservices and Scripts",
         description:
-          "Automatizaciones personalizadas listas para ejecutar en AWS Lambda o contenedores.",
+          "Custom automations ready to run on AWS Lambda or containers.",
         benefits: [
-          "Escalado automático",
-          "Alertas y métricas integradas",
-          "Mantenimiento sencillo",
+          "Automatic scaling",
+          "Built-in alerts and metrics",
+          "Simple maintenance",
         ],
         technologies: ["AWS", "Python", "Node.js"],
       },
     ],
     footer: {
-      focus: "Beneficios: ahorro de tiempo, reducción de errores y trazabilidad.",
-      cta: "Solicitar presupuesto",
+      focus: "Benefits: time savings, fewer errors, and full traceability.",
+      cta: "Request a quote",
     },
   },
   {
     id: "trading",
     icon: "💸",
     title: "Trading & FinTech Solutions",
-    subtitle: "Sistemas automatizados para trading y gestión de cuentas con métricas en vivo.",
+    subtitle: "Automated systems for trading and account management with live metrics.",
     services: [
       {
-        name: "Integración con MetaTrader (MT4/MT5)",
+        name: "MetaTrader Integration (MT4/MT5)",
         description:
-          "Bridge seguro para ejecutar operaciones desde web o backend hacia tus cuentas de trading.",
+          "Secure bridge to execute trades from web or backend into your trading accounts.",
         benefits: [
-          "Ejecución en milisegundos",
-          "Logs y auditorías por operación",
-          "Soporte multi-cuenta",
+          "Millisecond execution",
+          "Logs and audits per trade",
+          "Multi-account support",
         ],
         technologies: ["MetaApi", "MT4", "MT5", "Node.js"],
       },
       {
-        name: "Panel de métricas y control de fondeo",
+        name: "Funding Control & Metrics Dashboard",
         description:
-          "Panel tipo FTMO con visualización de balance, equity, drawdown y objetivos personalizados.",
+          "FTMO-style dashboard with balance, equity, drawdown, and custom goals.",
         benefits: [
-          "Alertas en tiempo real",
-          "Dashboards responsivos",
-          "Reportes descargables",
+          "Real-time alerts",
+          "Responsive dashboards",
+          "Downloadable reports",
         ],
         technologies: ["Next.js", "AWS", "PostgreSQL"],
       },
       {
-        name: "Trading Bot personalizado",
+        name: "Custom Trading Bot",
         description:
-          "Estrategias automatizadas en Python o Node.js con indicadores técnicos y control de riesgo.",
+          "Automated strategies in Python or Node.js with technical indicators and risk control.",
         benefits: [
-          "Backtesting con datos históricos",
-          "Gestión de riesgo configurable",
-          "Deploy automatizado",
+          "Backtesting with historical data",
+          "Configurable risk management",
+          "Automated deployment",
         ],
         technologies: ["Python", "Node.js", "AWS Lambda"],
       },
     ],
     footer: {
-      focus: "Clientes ideales: traders, brokers y startups fintech.",
-      cta: "Agendar reunión",
+      focus: "Ideal for traders, brokers, and fintech startups.",
+      cta: "Book a call",
     },
   },
   {
     id: "ecommerce",
     icon: "🛍️",
     title: "E-commerce & Marketplace Automation",
-    subtitle: "Conecto tus tiendas con sistemas externos para automatizar pagos, stock y notificaciones.",
+    subtitle: "Connect your stores with external systems to automate payments, inventory, and notifications.",
     services: [
       {
-        name: "Integración Shopify / Mirakl",
+        name: "Shopify / Mirakl Integration",
         description:
-          "Vinculo tu e-commerce con ERP, CRM u otros sistemas para centralizar información.",
+          "Link your e-commerce with ERP, CRM, or other systems to centralize information.",
         benefits: [
-          "Catálogo sincronizado",
-          "Actualización automática de stock",
-          "Pedidos unificados",
+          "Synced catalog",
+          "Automatic inventory updates",
+          "Unified orders",
         ],
         technologies: ["Shopify API", "Node.js", "Firebase"],
       },
       {
-        name: "Automatización de pagos y envíos",
+        name: "Payments and Shipping Automation",
         description:
-          "Configuro flujos con Stripe, MercadoPago y PayPal para pagos, facturas y notificaciones.",
+          "Configure flows with Stripe, MercadoPago, and PayPal for payments, invoices, and notifications.",
         benefits: [
-          "Pagos confirmados en tiempo real",
-          "Alertas de inventario",
-          "Emails transaccionales",
+          "Real-time payment confirmation",
+          "Inventory alerts",
+          "Transactional emails",
         ],
         technologies: ["Stripe", "MercadoPago", "PayPal"],
       },
       {
-        name: "Gestión centralizada de catálogos",
+        name: "Centralized Catalog Management",
         description:
-          "Administra productos y pedidos desde un único panel con roles y permisos.",
+          "Manage products and orders from a single panel with roles and permissions.",
         benefits: [
-          "Curva de aprendizaje mínima",
-          "Control multi-tienda",
-          "Historial y trazabilidad",
+          "Minimal learning curve",
+          "Multi-store control",
+          "History and traceability",
         ],
         technologies: ["Next.js", "Node.js", "PostgreSQL"],
       },
     ],
     footer: {
-      focus: "Stack sugerido: Node.js, Next.js, Shopify API, MercadoPago API, Stripe, Firebase.",
-      cta: "Solicitar presupuesto",
+      focus: "Suggested stack: Node.js, Next.js, Shopify API, MercadoPago API, Stripe, Firebase.",
+      cta: "Request a quote",
     },
   },
   {
     id: "devops",
     icon: "🧠",
     title: "DevOps & Cloud Infrastructure",
-    subtitle: "Entornos escalables, seguros y automatizados listos para producción.",
+    subtitle: "Scalable, secure, and automated environments ready for production.",
     services: [
       {
-        name: "Configuración AWS completa",
+        name: "Full AWS Setup",
         description:
-          "Infraestructura con Lambda, EC2, S3, RDS y pipelines CI/CD listos para tu equipo.",
+          "Infrastructure with Lambda, EC2, S3, RDS, and CI/CD pipelines ready for your team.",
         benefits: [
-          "Infraestructura como código",
-          "Seguridad y backups automatizados",
-          "Monitoreo con CloudWatch",
+          "Infrastructure as code",
+          "Automated security and backups",
+          "Monitoring with CloudWatch",
         ],
         technologies: ["AWS", "CloudFormation", "GitHub Actions"],
       },
       {
-        name: "Deploy automatizado",
+        name: "Automated Deployments",
         description:
-          "Pipelines para Vercel, Docker o Railway con rollbacks y revisión previa.",
+          "Pipelines for Vercel, Docker, or Railway with rollbacks and pre-release review.",
         benefits: [
-          "Entregas continuas",
-          "Versionado y aprobaciones",
-          "Observabilidad integrada",
+          "Continuous delivery",
+          "Versioning and approvals",
+          "Built-in observability",
         ],
         technologies: ["Docker", "Railway", "Vercel"],
       },
       {
-        name: "Monitoreo, logs y backups",
+        name: "Monitoring, Logs & Backups",
         description:
-          "Implemento dashboards, alertas y backups automáticos para mantener tu uptime.",
+          "Implement dashboards, alerts, and automated backups to keep your uptime high.",
         benefits: [
-          "Alertas proactivas",
-          "Historico de logs centralizado",
-          "Recuperación ante desastres",
+          "Proactive alerts",
+          "Centralized log history",
+          "Disaster recovery",
         ],
         technologies: ["CloudWatch", "Grafana", "AWS Backup"],
       },
     ],
     footer: {
       focus: "Stack: AWS, Railway, GitHub Actions, Docker, CloudWatch.",
-      cta: "Agendar reunión",
+      cta: "Book a call",
     },
   },
   {
     id: "consulting",
     icon: "👨‍💼",
     title: "Consulting & Technical Leadership",
-    subtitle: "Acompañamiento técnico para founders y equipos que necesitan dirección.",
+    subtitle: "Technical support for founders and teams that need direction.",
     services: [
       {
         name: "CTO-as-a-Service",
         description:
-          "Mentoría técnica continua para definir roadmap, contratar talento y escalar productos.",
+          "Ongoing technical mentorship to define roadmap, hire talent, and scale products.",
         benefits: [
-          "Reuniones semanales personalizadas",
-          "Seguimiento de OKRs técnicos",
-          "Red de partners y proveedores",
+          "Weekly tailored meetings",
+          "Tracking of technical OKRs",
+          "Network of partners and vendors",
         ],
         technologies: ["Notion", "Linear", "Slack"],
       },
       {
-        name: "Revisión de arquitectura",
+        name: "Architecture Review",
         description:
-          "Auditoría de código y arquitectura para detectar riesgos y oportunidades.",
+          "Code and architecture audit to identify risks and opportunities.",
         benefits: [
-          "Reporte ejecutivo con hallazgos",
-          "Prioridades claras y plan de acción",
-          "Sesión de revisión con tu equipo",
+          "Executive report with findings",
+          "Clear priorities and action plan",
+          "Review session with your team",
         ],
         technologies: ["AWS", "Next.js", "Node.js"],
       },
       {
-        name: "Planificación de roadmap",
+        name: "Roadmap Planning",
         description:
-          "Diseño de roadmap técnico con estimaciones, milestones y dependencias.",
+          "Design of a technical roadmap with estimates, milestones, and dependencies.",
         benefits: [
-          "Workshops colaborativos",
-          "Roadmap en herramientas colaborativas",
-          "Seguimiento quincenal",
+          "Collaborative workshops",
+          "Roadmap in collaborative tools",
+          "Bi-weekly follow-up",
         ],
         technologies: ["Notion", "Miro", "Jira"],
       },
     ],
     footer: {
-      focus: "Ideal para fundadores, startups sin equipo técnico y agencias.",
-      cta: "Agendar reunión",
+      focus: "Ideal for founders, startups without a technical team, and agencies.",
+      cta: "Book a call",
     },
   },
 ];
 
 const extras = {
-  title: "Extras / Complementos opcionales",
+  title: "Extras / Optional Add-ons",
   icon: "🌐",
   description:
-    "Complementos perfectos para ampliar tu proyecto o preparar un roadmap de mejoras.",
+    "Perfect add-ons to expand your project or prepare a roadmap of improvements.",
   services: [
     {
-      name: "Setup de autenticación segura",
+      name: "Secure Authentication Setup",
       technologies: ["Firebase", "Auth0", "JWT"],
     },
     {
-      name: "Notificaciones push multicanal",
+      name: "Multi-channel Push Notifications",
       technologies: ["FCM", "OneSignal"],
     },
     {
-      name: "Dashboards responsivos y UI personalizada",
+      name: "Responsive Dashboards and Custom UI",
       technologies: ["Tailwind CSS", "shadcn/ui"],
     },
     {
-      name: "Integración con Google Sheets / Notion / CRMs",
+      name: "Google Sheets / Notion / CRM Integrations",
       technologies: ["Google Sheets API", "Notion API", "Zapier"],
     },
   ],
@@ -307,27 +309,32 @@ export const Services = () => {
       <section className="services-page">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Servicios | {meta.title}</title>
+          <title>Services | {meta.title}</title>
           <meta
             name="description"
-            content="Catálogo de servicios de desarrollo SaaS, automatización, trading, e-commerce y DevOps."
+            content="Service catalog for SaaS development, automation, trading, e-commerce, and DevOps."
           />
         </Helmet>
 
         <div className="services-hero">
           <div className="services-hero__content">
-            <span className="services-hero__eyebrow">Servicios</span>
-            <h1>Construyo sistemas que automatizan negocios.</h1>
+            <span className="services-hero__eyebrow">Services</span>
+            <h1>I build systems that automate businesses.</h1>
             <p>
-              Desarrollo y automatizo productos digitales end-to-end: desde MVPs SaaS hasta infraestructura
-              cloud y automatizaciones de trading.
+              I design and automate end-to-end digital products: from SaaS MVPs to cloud infrastructure and
+              trading automations.
             </p>
             <div className="services-hero__actions">
-              <Link to="/contact" className="services-btn services-btn--primary">
-                Reservá una reunión gratuita de 15 minutos
-              </Link>
+              <a
+                href={CALENDLY_URL}
+                className="services-btn services-btn--primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a free 15-minute call
+              </a>
               <Link to="/portfolio" className="services-btn services-btn--ghost">
-                Ver experiencia previa
+                See past work
               </Link>
             </div>
           </div>
@@ -353,7 +360,7 @@ export const Services = () => {
                     </header>
                     <div className="service-item__details">
                       <div>
-                        <h4>Beneficios</h4>
+                        <h4>Benefits</h4>
                         <ul>
                           {service.benefits.map((benefit) => (
                             <li key={benefit}>{benefit}</li>
@@ -361,7 +368,7 @@ export const Services = () => {
                         </ul>
                       </div>
                       <div>
-                        <h4>Tecnologías</h4>
+                        <h4>Technologies</h4>
                         <div className="tech-tags">
                           {service.technologies.map((tech) => (
                             <span key={tech} className="tech-tag">
@@ -377,9 +384,14 @@ export const Services = () => {
 
               <footer className="service-card__footer">
                 <p>{category.footer.focus}</p>
-                <Link to="/contact" className="services-btn services-btn--secondary">
+                <a
+                  href={CALENDLY_URL}
+                  className="services-btn services-btn--secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {category.footer.cta}
-                </Link>
+                </a>
               </footer>
             </section>
           ))}
@@ -407,9 +419,14 @@ export const Services = () => {
               </div>
             ))}
           </div>
-          <Link to="/contact" className="services-btn services-btn--primary">
-            Consultar por complementos
-          </Link>
+          <a
+            href={CALENDLY_URL}
+            className="services-btn services-btn--primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ask about add-ons
+          </a>
         </section>
       </section>
     </HelmetProvider>
