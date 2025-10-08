@@ -354,12 +354,12 @@ export const Services = () => {
               <div className="service-card__body">
                 {category.services.map((service) => (
                   <article key={service.name} className="service-item">
-                    <header>
+                    <header className="service-item__header">
                       <h3>{service.name}</h3>
                       <p>{service.description}</p>
                     </header>
                     <div className="service-item__details">
-                      <div>
+                      <div className="service-item__section">
                         <h4>Benefits</h4>
                         <ul>
                           {service.benefits.map((benefit) => (
@@ -367,7 +367,7 @@ export const Services = () => {
                           ))}
                         </ul>
                       </div>
-                      <div>
+                      <div className="service-item__section">
                         <h4>Technologies</h4>
                         <div className="tech-tags">
                           {service.technologies.map((tech) => (
