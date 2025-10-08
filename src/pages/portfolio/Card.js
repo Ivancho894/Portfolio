@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -26,13 +26,26 @@ const ExperienceCard = ({ theme, experience }) => {
 
   useEffect(() => {
     setCurrentIndex(0);
-    if (images.length <= 1) return;
+  }, [images]);
+
+  useEffect(() => {
+    if (images.length <= 1 || isModalOpen) return undefined;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 5000);
 
     return () => clearInterval(interval);
+  }, [images, isModalOpen]);
+
+  const showPrevImage = useCallback(() => {
+    if (!images.length) return;
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  }, [images]);
+
+  const showNextImage = useCallback(() => {
+    if (!images.length) return;
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }, [images]);
 
   const handleImageClick = () => {
@@ -41,6 +54,16 @@ const ExperienceCard = ({ theme, experience }) => {
   };
 
   const closeModal = () => setIsModalOpen(false);
+
+  const handlePrevClick = (event) => {
+    event.stopPropagation();
+    showPrevImage();
+  };
+
+  const handleNextClick = (event) => {
+    event.stopPropagation();
+    showNextImage();
+  };
 
   return (
     <VerticalTimelineElement
@@ -85,6 +108,26 @@ const ExperienceCard = ({ theme, experience }) => {
         {!!images.length && (
           <div className="experience-carousel">
             <div className="carousel-image-wrapper">
+              {images.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    className="carousel-arrow left"
+                    onClick={handlePrevClick}
+                    aria-label="Imagen anterior"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    className="carousel-arrow right"
+                    onClick={handleNextClick}
+                    aria-label="Imagen siguiente"
+                  >
+                    ›
+                  </button>
+                </>
+              )}
               <img
                 src={images[currentIndex]}
                 alt={`${company} showcase ${currentIndex + 1}`}
@@ -116,6 +159,26 @@ const ExperienceCard = ({ theme, experience }) => {
                 <button className="image-modal-close" type="button" onClick={closeModal} aria-label="Cerrar">
                   ×
                 </button>
+                {images.length > 1 && (
+                  <>
+                    <button
+                      type="button"
+                      className="modal-arrow left"
+                      onClick={handlePrevClick}
+                      aria-label="Imagen anterior"
+                    >
+                      ‹
+                    </button>
+                    <button
+                      type="button"
+                      className="modal-arrow right"
+                      onClick={handleNextClick}
+                      aria-label="Imagen siguiente"
+                    >
+                      ›
+                    </button>
+                  </>
+                )}
                 <img
                   src={images[currentIndex]}
                   alt={`${company} showcase enlarged ${currentIndex + 1}`}
