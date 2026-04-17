@@ -24,6 +24,11 @@ export const Home = () => {
             <h1 className="hero-title-line1">FULL-STACK</h1>
             <h1 className="hero-title-line2">ENGINEER</h1>
           </div>
+          <p className="hero-tagline">
+            <span>Engineer mindset.</span>
+            <span>Founder vision.</span>
+            <span>Operator execution.</span>
+          </p>
           <p className="hero-desc">{introdata.description}</p>
           <div className="hero-stats">
             <div className="stat-item">

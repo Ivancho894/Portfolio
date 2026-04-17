@@ -104,6 +104,34 @@
   color: rgba(0, 0, 0, 0.1);
 }
 
+.hero-tagline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 18px 0 20px;
+}
+
+.hero-tagline span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-orange);
+  position: relative;
+}
+
+.hero-tagline span:not(:last-child)::after {
+  content: '·';
+  position: absolute;
+  right: -10px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="light"] .hero-tagline span:not(:last-child)::after {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .hero-desc {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
