@@ -1,0 +1,113 @@
+.profile-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.profile-image-wrap {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  background: #f0ece8;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(15%);
+}
+
+.profile-card-body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+}
+
+.profile-name {
+  font-family: 'Marcellus', serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.profile-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff4f0;
+  border: 1px solid #ffd4c4;
+  border-radius: 100px;
+  padding: 5px 12px;
+  margin-bottom: 14px;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.badge-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #e85d04;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.profile-bio {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 18px;
+  padding: 0 4px;
+}
+
+.profile-socials {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.profile-socials a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f5f0ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d0d0d;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.profile-socials a:hover {
+  background: #e85d04;
+  color: #fff;
+  transform: translateY(-2px);
+}
