@@ -1,16 +1,16 @@
 const meta = {
-    title: "Ivan Serralta",
-    description: "I’m Ivan Serralta, a Systems of Information Engineer student, Full Stack Developer, and Agile Coach passionate about technology and design."
+    title: "Ivan Serralta — Full Stack Developer",
+    description: "Full Stack Developer and Acting CTO based in Argentina. I build production-ready SaaS products, trading platforms, and web automation systems. Available for freelance and full-time roles."
 };
 
 const introdata = {
     title: "I’m Ivan Serralta",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps"
+        first: "I build SaaS products",
+        second: "I lead technical teams",
+        third: "I turn ideas into software"
     },
-    description: "Transform your digital vision into reality with cutting-edge web solutions crafted for optimal user engagement and aesthetic precision. Harness my expertise in dynamic and responsive design to elevate your project. Ready to innovate? Let’s connect and make your ideas come to life!",
+    description: "Full Stack Developer and Acting CTO with hands-on experience building trading dashboards, e-commerce automation, and cloud infrastructure — from architecture to deployment.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d"
 };
 

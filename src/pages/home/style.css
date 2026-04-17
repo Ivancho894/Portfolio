@@ -229,3 +229,58 @@ section {
     color: var(--text-color)
 }
 
+.availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 100px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    opacity: 0.75;
+    letter-spacing: 0.03em;
+}
+
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    flex-shrink: 0;
+    animation: dot-pulse 2s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}
+
+.hero_stats {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.stat_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat_number {
+    font-family: 'Marcellus', serif;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--secondary-color);
+}
+
+.stat_label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.5;
+    margin-top: 5px;
+}
+
