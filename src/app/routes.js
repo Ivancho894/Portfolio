@@ -6,7 +6,6 @@ import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Services } from "../pages/services";
-import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Certificates } from "../pages/certificates";
 
@@ -38,7 +37,6 @@ function AppRoutes({theme}) {
   return (
     <div className="s_c">
       <AnimatedRoutes theme={theme} />
-      <Socialicons />
     </div>
   );
 }
