@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { FiMail, FiX, FiCalendar } from "react-icons/fi";
 import { meta } from "../../content_option";
 
 const CALENDLY_URL = "https://calendly.com/serralta-ivan/personal";
@@ -303,7 +305,11 @@ const extras = {
   ],
 };
 
+const EMAIL = "ivanserradev@gmail.com";
+
 export const Services = () => {
+  const [emailModalOpen, setEmailModalOpen] = useState(false);
+
   return (
     <HelmetProvider>
       <section className="services-page">
@@ -325,14 +331,14 @@ export const Services = () => {
               trading automations.
             </p>
             <div className="services-hero__actions">
-              <a
-                href={CALENDLY_URL}
+              <button
+                type="button"
                 className="services-btn services-btn--primary"
-                target="_blank"
-                rel="noreferrer"
+                onClick={() => setEmailModalOpen(true)}
               >
-                Book a free 15-minute call
-              </a>
+                <FiMail style={{ marginRight: "0.5rem" }} />
+                Send me an email
+              </button>
               <Link to="/portfolio" className="services-btn services-btn--ghost">
                 See past work
               </Link>
@@ -429,6 +435,58 @@ export const Services = () => {
           </a>
         </section>
       </section>
+
+      {emailModalOpen && createPortal(
+        <div
+          className="email-modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setEmailModalOpen(false)}
+        >
+          <div className="email-modal" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="email-modal__close"
+              aria-label="Close"
+              onClick={() => setEmailModalOpen(false)}
+            >
+              <FiX />
+            </button>
+
+            <div className="email-modal__icon-wrap">
+              <FiMail className="email-modal__big-icon" />
+            </div>
+
+            <h2 className="email-modal__title">Get in touch</h2>
+            <p className="email-modal__subtitle">
+              Drop me an email and I'll reply within 24 hours.
+            </p>
+
+            <a
+              href={`mailto:${EMAIL}`}
+              className="email-modal__address"
+            >
+              {EMAIL}
+            </a>
+
+            <div className="email-modal__divider">
+              <span>or prefer a call?</span>
+            </div>
+
+            <a
+              href={CALENDLY_URL}
+              className="services-btn services-btn--primary email-modal__cal-btn"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setEmailModalOpen(false)}
+            >
+              <FiCalendar style={{ marginRight: "0.5rem" }} />
+              Book a free 15-minute call
+            </a>
+          </div>
+        </div>,
+        document.body
+      )}
     </HelmetProvider>
   );
 };

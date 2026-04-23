@@ -59,7 +59,7 @@ export const Home = () => {
               <div className="hero-card-content">
                 <p className="hero-card-title">REACT, NODE.JS,<br />AWS, AI SYSTEMS</p>
               </div>
-              <Link to="/about" className="hero-card-arrow"><FiArrowUpRight /></Link>
+              <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>
           </div>
         </div>
