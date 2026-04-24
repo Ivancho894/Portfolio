@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { socialprofils } from "../../content_option";
+import { socialprofils, versionConfig } from "../../content_option";
 import YoImage from "../../assets/images/Yo.png";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
@@ -14,11 +14,9 @@ const ProfileCard = () => {
         <h2 className="profile-name">Iván Serralta</h2>
         <div className="profile-badge">
           <span className="badge-dot"></span>
-          <span className="badge-text">Available for work</span>
+          <span className="badge-text">{versionConfig.profileCard.badge}</span>
         </div>
-        <p className="profile-bio">
-          A Full-Stack Engineer who builds scalable SaaS, fintech, and AI-driven products.
-        </p>
+        <p className="profile-bio">{versionConfig.profileCard.bio}</p>
         <div className="profile-socials">
           {socialprofils.github && (
             <a href={socialprofils.github} target="_blank" rel="noreferrer" aria-label="GitHub">
