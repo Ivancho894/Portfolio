@@ -1,22 +1,22 @@
 const meta = {
-    title: "Iván Serralta — Full-Stack Engineer & Acting CTO",
-    description: "Full-Stack Engineer and Acting CTO. I build scalable SaaS, fintech platforms, and AI-driven systems — from architecture to deployment. Engineer mindset. Founder vision. Operator execution."
+    title: "Iván Serralta — Business Automation & AI Systems",
+    description: "I find what's slowing your business down and eliminate it. Automation systems, AI agents, and workflow integrations that save hours every week and reduce costly errors."
 };
 
 const introdata = {
     title: "Iván Serralta",
     animated: {
-        first: "I build SaaS products",
-        second: "I lead technical teams",
-        third: "I turn chaos into scalable systems"
+        first: "I eliminate manual work",
+        second: "I automate your operations",
+        third: "You focus on what matters"
     },
-    description: "Passionate about creating systems that convert operational chaos into scalable businesses. Specialized in full-stack development, automation, complex integrations, fintech, e-commerce, and AI-driven systems.",
+    description: "I build automation systems and AI tools for business owners losing time to repetitive processes. No technical jargon — just measurable results: fewer errors, faster operations, and real cost savings.",
     your_img_url: ""
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Full-Stack Engineer and Acting CTO with hands-on experience turning traditional businesses into scalable SaaS ecosystems. I specialize in fintech, e-commerce automation, and AI-driven systems — from architecture to deployment. Hybrid profile: engineer, product builder, tech leader, and business operator. With an entrepreneurial mindset, strong results orientation, and the ability to find opportunities where others see operational friction. Passionate about sailing and nautical navigation — reading complex variables, making real-time decisions, and maintaining focus under pressure."
+    aboutme: "I'm a software engineer specialized in business automation and AI systems. I work with business owners and operators who know something is slowing them down — but don't know how to fix it technically. I find the bottleneck, build the solution, and measure the impact. From automating marketplace messaging across 6 platforms (Carrefour, Decathlon, Worten) to building AI agents that handle restaurant reservations without staff involvement, my focus is always the same: eliminate the manual work and free your team to focus on growth. I don't just write code — I understand business operations and build systems that deliver real ROI."
 };
 
 const workExperience = [
@@ -198,24 +198,24 @@ const skills = [
 
 const services = [
     {
-        title: "SaaS & Web Apps",
-        description: "End-to-end product development: dashboards, admin panels, MVPs, and scalable SaaS platforms from architecture to deployment."
-    },
-    {
         title: "Automation & AI Systems",
-        description: "AI agents, chatbots, workflow automation, n8n pipelines, and intelligent integrations that eliminate manual work."
-    },
-    {
-        title: "Trading & FinTech",
-        description: "Real-time trading dashboards, MT4/MT5 integrations, bots, Interactive Brokers connectivity, and payment systems."
+        description: "AI agents, chatbots, workflow automation, n8n pipelines, and intelligent integrations that eliminate manual work and reduce operational costs."
     },
     {
         title: "E-commerce & Marketplaces",
         description: "Shopify stores, marketplace integrations (Carrefour, Decathlon, Worten), omnichannel sync, and payment automation."
     },
     {
+        title: "SaaS & Web Apps",
+        description: "End-to-end product development: dashboards, admin panels, MVPs, and scalable SaaS platforms from architecture to deployment."
+    },
+    {
         title: "Cloud & DevOps",
         description: "AWS infrastructure, CI/CD pipelines, containerization with Docker, monitoring, and scalable cloud architecture."
+    },
+    {
+        title: "Trading & FinTech",
+        description: "Real-time trading dashboards, MT4/MT5 integrations, bots, Interactive Brokers connectivity, and payment systems."
     },
     {
         title: "CTO as a Service",
@@ -225,21 +225,27 @@ const services = [
 
 const dataportfolio = [
     {
-        title: "OnlyGenius — FinTech SaaS",
-        description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
-        category: "SaaS / FinTech",
+        title: "AI Restaurant Call Manager",
+        description: "AI-powered call manager that handles gastronomy reservations automatically via voice and messaging — zero staff required.",
+        category: "AI / Automation",
         link: "https://github.com/Ivancho894"
     },
     {
         title: "E-commerce Messaging Automation",
-        description: "Integrated 6 marketplace platforms (Carrefour, Decathlon, Worten) into Respond.io with full messaging automation.",
+        description: "Integrated 6 marketplace platforms (Carrefour, Decathlon, Worten) into Respond.io with full messaging automation — from orders to customer replies.",
         category: "Automation / APIs",
         link: "https://github.com/Ivancho894"
     },
     {
-        title: "AI Restaurant Call Manager",
-        description: "AI-powered call manager that handles gastronomy reservations automatically via voice and messaging.",
-        category: "AI / Automation",
+        title: "Automated Trading Bot",
+        description: "Automated trading bot with MetaTrader and Interactive Brokers integrations for algorithmic strategy execution.",
+        category: "FinTech / Automation",
+        link: "https://github.com/Ivancho894"
+    },
+    {
+        title: "OnlyGenius — FinTech SaaS",
+        description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
+        category: "SaaS / FinTech",
         link: "https://github.com/Ivancho894"
     },
     {
@@ -254,12 +260,6 @@ const dataportfolio = [
         category: "Web App",
         link: "https://github.com/Ivancho894/Nautica-Rios-Web-Front"
     },
-    {
-        title: "Automated Trading Bot",
-        description: "Automated trading bot with MetaTrader and Interactive Brokers integrations for algorithmic strategy execution.",
-        category: "FinTech / Automation",
-        link: "https://github.com/Ivancho894"
-    }
 ];
 
 const contactConfig = {
