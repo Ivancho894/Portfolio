@@ -1,22 +1,22 @@
 const meta = {
-    title: "Iván Serralta — Full-Stack Engineer & Acting CTO",
-    description: "Full-Stack Engineer and Acting CTO. I build scalable SaaS, fintech platforms, and AI-driven systems — from architecture to deployment. Engineer mindset. Founder vision. Operator execution."
+    title: "Iván Serralta — Fractional CTO for Startups",
+    description: "Fractional CTO for early-stage startups. I build your tech stack, lead your team, and turn your vision into a scalable product — so you can focus on the business."
 };
 
 const introdata = {
     title: "Iván Serralta",
     animated: {
-        first: "I build SaaS products",
-        second: "I lead technical teams",
-        third: "I turn chaos into scalable systems"
+        first: "I'll build your tech stack",
+        second: "I lead your engineering team",
+        third: "You focus on the business"
     },
-    description: "Passionate about creating systems that convert operational chaos into scalable businesses. Specialized in full-stack development, automation, complex integrations, fintech, e-commerce, and AI-driven systems.",
+    description: "Fractional CTO for startups and founders. I architect and ship your product, lead your developers, and make the technology decisions you can trust — from day one.",
     your_img_url: ""
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Full-Stack Engineer and Acting CTO with hands-on experience turning traditional businesses into scalable SaaS ecosystems. I specialize in fintech, e-commerce automation, and AI-driven systems — from architecture to deployment. Hybrid profile: engineer, product builder, tech leader, and business operator. With an entrepreneurial mindset, strong results orientation, and the ability to find opportunities where others see operational friction. Passionate about sailing and nautical navigation — reading complex variables, making real-time decisions, and maintaining focus under pressure."
+    aboutme: "Full-Stack Engineer and Acting CTO with a track record of building SaaS products from zero. At OnlyGenius, I architected and shipped the entire tech ecosystem — trading dashboard, CRM, admin panel, AWS infrastructure, and Stripe billing — while leading a team of 5 developers. I work with non-technical founders who need a trusted tech partner: someone who can translate business goals into architecture, hire and lead developers, and deliver a scalable product without the overhead of a full-time CTO. My background spans fintech, SaaS, automation, and cloud infrastructure."
 };
 
 const workExperience = [
@@ -198,8 +198,16 @@ const skills = [
 
 const services = [
     {
+        title: "CTO as a Service",
+        description: "Technical leadership for growing teams: architecture reviews, hiring, documentation, and strategic technology decisions."
+    },
+    {
         title: "SaaS & Web Apps",
         description: "End-to-end product development: dashboards, admin panels, MVPs, and scalable SaaS platforms from architecture to deployment."
+    },
+    {
+        title: "Cloud & DevOps",
+        description: "AWS infrastructure, CI/CD pipelines, containerization with Docker, monitoring, and scalable cloud architecture."
     },
     {
         title: "Automation & AI Systems",
@@ -213,21 +221,25 @@ const services = [
         title: "E-commerce & Marketplaces",
         description: "Shopify stores, marketplace integrations (Carrefour, Decathlon, Worten), omnichannel sync, and payment automation."
     },
-    {
-        title: "Cloud & DevOps",
-        description: "AWS infrastructure, CI/CD pipelines, containerization with Docker, monitoring, and scalable cloud architecture."
-    },
-    {
-        title: "CTO as a Service",
-        description: "Technical leadership for growing teams: architecture reviews, hiring, documentation, and strategic technology decisions."
-    },
 ];
 
 const dataportfolio = [
     {
         title: "OnlyGenius — FinTech SaaS",
-        description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
+        description: "Full SaaS ecosystem built from scratch: trading dashboard, CRM, admin panel, AWS infra, and Stripe billing. Led architecture and a team of 5.",
         category: "SaaS / FinTech",
+        link: "https://github.com/Ivancho894"
+    },
+    {
+        title: "Boats Marketplace",
+        description: "Full-stack boat buying/selling platform with MercadoPago payments, real-time messaging, and Scrum-managed delivery.",
+        category: "Web App",
+        link: "https://github.com/Ivancho894/Nautica-Rios-Web-Front"
+    },
+    {
+        title: "Automated Trading Bot",
+        description: "Automated trading bot with MetaTrader and Interactive Brokers integrations for algorithmic strategy execution.",
+        category: "FinTech / Automation",
         link: "https://github.com/Ivancho894"
     },
     {
@@ -248,18 +260,6 @@ const dataportfolio = [
         category: "AI / Education",
         link: "https://github.com/Ivancho894"
     },
-    {
-        title: "Boats Marketplace",
-        description: "Full-stack boat buying/selling platform with MercadoPago payments, real-time messaging, and Scrum-managed delivery.",
-        category: "Web App",
-        link: "https://github.com/Ivancho894/Nautica-Rios-Web-Front"
-    },
-    {
-        title: "Automated Trading Bot",
-        description: "Automated trading bot with MetaTrader and Interactive Brokers integrations for algorithmic strategy execution.",
-        category: "FinTech / Automation",
-        link: "https://github.com/Ivancho894"
-    }
 ];
 
 const contactConfig = {
