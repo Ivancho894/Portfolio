@@ -1,22 +1,22 @@
 const meta = {
-    title: "Iván Serralta — Full-Stack Engineer & Acting CTO",
-    description: "Full-Stack Engineer and Acting CTO. I build scalable SaaS, fintech platforms, and AI-driven systems — from architecture to deployment. Engineer mindset. Founder vision. Operator execution."
+    title: "Iván Serralta — Tech for the Nautical Industry",
+    description: "I build digital solutions for marinas, sailing schools, charter companies, and nautical federations. Certified yacht skipper and software engineer — I know your world from the inside."
 };
 
 const introdata = {
     title: "Iván Serralta",
     animated: {
-        first: "I build SaaS products",
-        second: "I lead technical teams",
-        third: "I turn chaos into scalable systems"
+        first: "I build tech for the nautical world",
+        second: "I'm a certified yacht skipper",
+        third: "I sail and I code"
     },
-    description: "Passionate about creating systems that convert operational chaos into scalable businesses. Specialized in full-stack development, automation, complex integrations, fintech, e-commerce, and AI-driven systems.",
+    description: "Software engineer and certified yacht skipper building digital tools for marinas, sailing schools, charter companies, and nautical federations. I understand your industry from the inside — and I build technology that actually fits how it works.",
     your_img_url: ""
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Full-Stack Engineer and Acting CTO with hands-on experience turning traditional businesses into scalable SaaS ecosystems. I specialize in fintech, e-commerce automation, and AI-driven systems — from architecture to deployment. Hybrid profile: engineer, product builder, tech leader, and business operator. With an entrepreneurial mindset, strong results orientation, and the ability to find opportunities where others see operational friction. Passionate about sailing and nautical navigation — reading complex variables, making real-time decisions, and maintaining focus under pressure."
+    aboutme: "I'm a Full-Stack Engineer and certified yacht skipper who builds technology for the nautical industry. I've been sailing since my early years and served as a sailing instructor at Universidad Nacional de Córdoba — teaching students to captain vessels up to 20 meters. I owned a sailboat for several years, and now I'm all in on foiling: currently learning wingfoiling. My nautical background isn't a hobby mention — it's a trust signal. I understand the real operations of marinas, sailing schools, and charter companies, and I know what a generic software agency gets wrong. Combined with my expertise in AI, automation, and web development, I build solutions that fit how the nautical world actually works."
 };
 
 const workExperience = [
@@ -198,53 +198,35 @@ const skills = [
 
 const services = [
     {
-        title: "SaaS & Web Apps",
-        description: "End-to-end product development: dashboards, admin panels, MVPs, and scalable SaaS platforms from architecture to deployment."
-    },
-    {
         title: "Automation & AI Systems",
-        description: "AI agents, chatbots, workflow automation, n8n pipelines, and intelligent integrations that eliminate manual work."
+        description: "AI agents, chatbots, workflow automation, n8n pipelines, and intelligent integrations built for the specific needs of nautical operations."
     },
     {
-        title: "Trading & FinTech",
-        description: "Real-time trading dashboards, MT4/MT5 integrations, bots, Interactive Brokers connectivity, and payment systems."
+        title: "SaaS & Web Apps",
+        description: "End-to-end product development: booking platforms, management dashboards, member portals, and school enrollment systems."
     },
     {
         title: "E-commerce & Marketplaces",
-        description: "Shopify stores, marketplace integrations (Carrefour, Decathlon, Worten), omnichannel sync, and payment automation."
+        description: "Online sales platforms, boat listing marketplaces, equipment stores, and payment automation tailored for the nautical sector."
+    },
+    {
+        title: "CTO as a Service",
+        description: "Technical leadership for nautical organizations building their first digital product: architecture, hiring, and strategic technology decisions."
     },
     {
         title: "Cloud & DevOps",
         description: "AWS infrastructure, CI/CD pipelines, containerization with Docker, monitoring, and scalable cloud architecture."
     },
     {
-        title: "CTO as a Service",
-        description: "Technical leadership for growing teams: architecture reviews, hiring, documentation, and strategic technology decisions."
+        title: "Trading & FinTech",
+        description: "Real-time trading dashboards, MT4/MT5 integrations, bots, Interactive Brokers connectivity, and payment systems."
     },
 ];
 
 const dataportfolio = [
     {
-        title: "OnlyGenius — FinTech SaaS",
-        description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
-        category: "SaaS / FinTech",
-        link: "https://github.com/Ivancho894"
-    },
-    {
-        title: "E-commerce Messaging Automation",
-        description: "Integrated 6 marketplace platforms (Carrefour, Decathlon, Worten) into Respond.io with full messaging automation.",
-        category: "Automation / APIs",
-        link: "https://github.com/Ivancho894"
-    },
-    {
-        title: "AI Restaurant Call Manager",
-        description: "AI-powered call manager that handles gastronomy reservations automatically via voice and messaging.",
-        category: "AI / Automation",
-        link: "https://github.com/Ivancho894"
-    },
-    {
         title: "Nautical School AI Chatbot",
-        description: "Intelligent chatbot assistant for a nautical school — answers questions, schedules lessons, manages enrollments.",
+        description: "Intelligent chatbot assistant for a nautical school — answers questions, schedules lessons, manages enrollments. Work in progress — live soon.",
         category: "AI / Education",
         link: "https://github.com/Ivancho894"
     },
@@ -255,11 +237,29 @@ const dataportfolio = [
         link: "https://github.com/Ivancho894/Nautica-Rios-Web-Front"
     },
     {
+        title: "OnlyGenius — FinTech SaaS",
+        description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
+        category: "SaaS / FinTech",
+        link: "https://github.com/Ivancho894"
+    },
+    {
+        title: "AI Restaurant Call Manager",
+        description: "AI-powered call manager that handles gastronomy reservations automatically via voice and messaging.",
+        category: "AI / Automation",
+        link: "https://github.com/Ivancho894"
+    },
+    {
+        title: "E-commerce Messaging Automation",
+        description: "Integrated 6 marketplace platforms (Carrefour, Decathlon, Worten) into Respond.io with full messaging automation.",
+        category: "Automation / APIs",
+        link: "https://github.com/Ivancho894"
+    },
+    {
         title: "Automated Trading Bot",
         description: "Automated trading bot with MetaTrader and Interactive Brokers integrations for algorithmic strategy execution.",
         category: "FinTech / Automation",
         link: "https://github.com/Ivancho894"
-    }
+    },
 ];
 
 const contactConfig = {
