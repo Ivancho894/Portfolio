@@ -8,6 +8,9 @@ import { About } from "../pages/about";
 import { Services } from "../pages/services";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Certificates } from "../pages/certificates";
+import { Privacy } from "../pages/privacy";
+import { Terms } from "../pages/terms";
+import { DataDeletion } from "../pages/datadeletion";
 
 const AnimatedRoutes = withRouter(({ location , theme}) => (
   <TransitionGroup>
@@ -27,6 +30,9 @@ const AnimatedRoutes = withRouter(({ location , theme}) => (
         <Route path="/services" element={<Services />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/data-deletion" element={<DataDeletion />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>
