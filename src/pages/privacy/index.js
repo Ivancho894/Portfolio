@@ -24,7 +24,7 @@ export const Privacy = () => {
           </header>
 
           <p>
-            <strong>[NOMBRE_LEGAL]</strong>, operando bajo la marca SwellOps
+            <strong>Ivan Serralta</strong>, operando bajo la marca SwellOps
             («nosotros», «el Servicio»), opera servicios de mensajería automatizada
             disponibles a través de WhatsApp. Esta política describe qué información
             recopilamos, cómo la usamos y los derechos que tenés sobre ella.
@@ -67,7 +67,7 @@ export const Privacy = () => {
           <h2><span className="legal-num">05</span>Tus derechos</h2>
           <p>
             Podés solicitar acceso, rectificación o eliminación de tus datos
-            enviando un mensaje a <a href="mailto:[EMAIL_CONTACTO]">[EMAIL_CONTACTO]</a>.
+            enviando un mensaje a <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a>.
             Consultá también nuestra{" "}
             <Link to="/data-deletion">página de eliminación de datos</Link>.
           </p>
@@ -88,9 +88,9 @@ export const Privacy = () => {
 
           <h2><span className="legal-num">08</span>Contacto</h2>
           <div className="legal-contact-block">
-            <strong>[NOMBRE_LEGAL]</strong><br />
+            <strong>Ivan Serralta</strong><br />
             Marca: SwellOps<br />
-            Email: <a href="mailto:[EMAIL_CONTACTO]">[EMAIL_CONTACTO]</a><br />
+            Email: <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a><br />
             Buenos Aires, Argentina
           </div>
 

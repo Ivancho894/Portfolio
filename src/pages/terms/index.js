@@ -25,7 +25,7 @@ export const Terms = () => {
 
           <p>
             Estos Términos rigen el uso del servicio de mensajería automatizada
-            operado por <strong>[NOMBRE_LEGAL]</strong> bajo la marca SwellOps
+            operado por <strong>Ivan Serralta</strong> bajo la marca SwellOps
             («nosotros», «el Servicio»). Al interactuar con el Servicio, aceptás
             los términos descritos a continuación.
           </p>
@@ -59,7 +59,7 @@ export const Terms = () => {
           <h2><span className="legal-num">04</span>Propiedad intelectual</h2>
           <p>
             El software, marcas y contenidos del Servicio son propiedad de
-            [NOMBRE_LEGAL]. Los mensajes que envíes siguen siendo tuyos; nos
+            Ivan Serralta. Los mensajes que envíes siguen siendo tuyos; nos
             otorgás una licencia limitada y no exclusiva para procesarlos con el
             único fin de prestar el Servicio.
           </p>
@@ -95,9 +95,9 @@ export const Terms = () => {
 
           <h2><span className="legal-num">09</span>Contacto</h2>
           <div className="legal-contact-block">
-            <strong>[NOMBRE_LEGAL]</strong><br />
+            <strong>Ivan Serralta</strong><br />
             Marca: SwellOps<br />
-            Email: <a href="mailto:[EMAIL_CONTACTO]">[EMAIL_CONTACTO]</a><br />
+            Email: <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a><br />
             Buenos Aires, Argentina
           </div>
 
