@@ -34,7 +34,7 @@ export const DataDeletion = () => {
           <ul>
             <li>
               Enviar un email a{" "}
-              <a href="mailto:innerdevops@gmail.com?subject=Eliminar%20mis%20datos">innerdevops@gmail.com</a>
+              <a href="mailto:hello@ivanserralta.com?subject=Eliminar%20mis%20datos">hello@ivanserralta.com</a>
               {" "}con el asunto <em>«Eliminar mis datos»</em>.
             </li>
             <li>
@@ -71,7 +71,7 @@ export const DataDeletion = () => {
           <div className="legal-contact-block">
             <strong>Ivan Serralta</strong><br />
             Marca: SwellOps<br />
-            Email: <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a><br />
+            Email: <a href="mailto:hello@ivanserralta.com">hello@ivanserralta.com</a><br />
             Buenos Aires, Argentina
           </div>
 

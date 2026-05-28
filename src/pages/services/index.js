@@ -305,7 +305,7 @@ const extras = {
   ],
 };
 
-const EMAIL = "ivanserradev@gmail.com";
+const EMAIL = "hello@ivanserralta.com";
 
 export const Services = () => {
   const [emailModalOpen, setEmailModalOpen] = useState(false);

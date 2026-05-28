@@ -67,7 +67,7 @@ export const Privacy = () => {
           <h2><span className="legal-num">05</span>Tus derechos</h2>
           <p>
             Podés solicitar acceso, rectificación o eliminación de tus datos
-            enviando un mensaje a <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a>.
+            enviando un mensaje a <a href="mailto:hello@ivanserralta.com">hello@ivanserralta.com</a>.
             Consultá también nuestra{" "}
             <Link to="/data-deletion">página de eliminación de datos</Link>.
           </p>
@@ -90,7 +90,7 @@ export const Privacy = () => {
           <div className="legal-contact-block">
             <strong>Ivan Serralta</strong><br />
             Marca: SwellOps<br />
-            Email: <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a><br />
+            Email: <a href="mailto:hello@ivanserralta.com">hello@ivanserralta.com</a><br />
             Buenos Aires, Argentina
           </div>
 

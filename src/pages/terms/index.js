@@ -97,7 +97,7 @@ export const Terms = () => {
           <div className="legal-contact-block">
             <strong>Ivan Serralta</strong><br />
             Marca: SwellOps<br />
-            Email: <a href="mailto:innerdevops@gmail.com">innerdevops@gmail.com</a><br />
+            Email: <a href="mailto:hello@ivanserralta.com">hello@ivanserralta.com</a><br />
             Buenos Aires, Argentina
           </div>
 

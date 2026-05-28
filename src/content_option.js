@@ -263,7 +263,7 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "serralta.ivan@gmail.com",
+    YOUR_EMAIL: "hello@ivanserralta.com",
     YOUR_FONE: "+54 354 156 6295",
     description: "Open to freelance projects, long-term partnerships, and CTO-as-a-Service engagements. Let's talk."
 };
