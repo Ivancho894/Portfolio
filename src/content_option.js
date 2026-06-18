@@ -271,7 +271,7 @@ const contactConfig = {
 const socialprofiles = {
     github: "https://github.com/Ivancho894",
     linkedin: "https://www.linkedin.com/in/ivan-serralta",
-    portfolio: "https://serradev.netlify.app/"
+    portfolio: "https://ivanserralta.com"
 };
 
 const datacertificates = [
@@ -299,7 +299,7 @@ const socialprofils = {
     twitter: false,
 };
 
-const logotext = "SERRADEV";
+const logotext = "IVAN SERRALTA";
 
 export {
     meta,
