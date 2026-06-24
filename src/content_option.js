@@ -244,19 +244,19 @@ const dataportfolio = [
             "API Integration"
         ],
         category: "Webapp / E-commerce",
-        link: "https://github.com/Ivancho894"
+        link: "https://www.edgeworkshop.shop/"
     },
     {
         title: "OnlyGenius — FinTech SaaS",
         description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
         category: "SaaS / FinTech",
-        link: "https://github.com/Ivancho894"
+        link: "https://drive.google.com/file/d/1EuKIlUwoJ2YmgLN6CqVozXZYbmDUFso-/view"
     },
     {
         title: "E-commerce Messaging Automation",
         description: "Integrated 6 marketplace platforms (Carrefour, Decathlon, Worten) into Respond.io with full messaging automation.",
         category: "Automation / APIs",
-        link: "https://github.com/Ivancho894"
+        link: "https://drive.google.com/file/d/1TkwwuUORCbHGPow_lm1ZPb3mqE_qXdFr/view?ths=true"
     },
     {
         title: "AI Restaurant Call Manager",
@@ -286,14 +286,14 @@ const dataportfolio = [
 
 const contactConfig = {
     YOUR_EMAIL: "hello@ivanserralta.com",
-    YOUR_FONE: "+54 354 156 6295",
+    YOUR_FONE: "+54 3541 566295",
     description: "Open to freelance projects, long-term partnerships, and CTO-as-a-Service engagements. Let's talk."
 };
 
 const socialprofiles = {
     github: "https://github.com/Ivancho894",
     linkedin: "https://www.linkedin.com/in/ivan-serralta",
-    portfolio: "https://serradev.netlify.app/"
+    portfolio: "https://ivanserralta.com/"
 };
 
 const datacertificates = [
@@ -321,7 +321,7 @@ const socialprofils = {
     twitter: false,
 };
 
-const logotext = "SERRADEV";
+const logotext = "IVAN SERRALTA";
 
 export {
     meta,
