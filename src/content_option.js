@@ -225,6 +225,28 @@ const services = [
 
 const dataportfolio = [
     {
+        title: "Custom Product Configurator Webapp with Stripe Integration",
+        role: "Full Stack Developer",
+        description: "Built a complete product configurator webapp for Edge Workshop, a premium custom letterbox manufacturer in Perth, Australia. Customers can configure orientation, size, finish, color, font, house number, and add-ons in real time, see a live visual preview, get instant pricing, and pay through Stripe. Replaced their manual quoting process (phone + email) with a 24/7 online platform. Includes automated email confirmations and an admin panel to manage orders and pricing without developer involvement. Delivered in 5 weeks from scope to production.",
+        skills: [
+            "React / Next.js",
+            "Node.js",
+            "Stripe Integration",
+            "TailwindCSS",
+            "PostgreSQL / Supabase",
+            "Responsive Web Design",
+            "E-commerce Development",
+            "Email Automation",
+            "Admin Dashboard Development",
+            "Real-time Pricing Calculation",
+            "Custom SVG Product Visualization",
+            "Deployment on Vercel",
+            "API Integration"
+        ],
+        category: "Webapp / E-commerce",
+        link: "https://github.com/Ivancho894"
+    },
+    {
         title: "OnlyGenius — FinTech SaaS",
         description: "Full SaaS ecosystem: real-time trading dashboard, CRM, admin panel, AWS infra, and Stripe billing from scratch.",
         category: "SaaS / FinTech",
