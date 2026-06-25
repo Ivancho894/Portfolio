@@ -240,7 +240,7 @@ const dataportfolio = [
             "Human Handoff"
         ],
         category: "AI SaaS / Multi-tenant",
-        link: "https://github.com/Ivancho894"
+        link: "https://github.com/Ivancho894/timonchat-showcase/blob/main/README.md"
     },
     {
         title: "Edge Workshop — Custom Product Configurator with Stripe",
