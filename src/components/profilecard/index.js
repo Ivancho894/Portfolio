@@ -17,7 +17,7 @@ const ProfileCard = () => {
           <span className="badge-text">Available for work</span>
         </div>
         <p className="profile-bio">
-          A Full-Stack Engineer who builds scalable SaaS, fintech, and AI-driven products.
+          Building AI SaaS in production — multi-tenant WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.
         </p>
         <div className="profile-socials">
           {socialprofils.github && (
