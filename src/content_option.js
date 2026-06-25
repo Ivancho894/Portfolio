@@ -1,22 +1,22 @@
 const meta = {
-    title: "Iván Serralta — Full-Stack Engineer & Acting CTO",
-    description: "Full-Stack Engineer and Acting CTO. I build scalable SaaS, fintech platforms, and AI-driven systems — from architecture to deployment. Engineer mindset. Founder vision. Operator execution."
+    title: "Ivan Serralta — AI SaaS Developer | Claude · RAG · Multi-tenant",
+    description: "I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia."
 };
 
 const introdata = {
     title: "Iván Serralta",
     animated: {
-        first: "I build SaaS products",
-        second: "I lead technical teams",
-        third: "I turn chaos into scalable systems"
+        first: "I build AI SaaS in production",
+        second: "I ship multi-tenant products",
+        third: "Claude + RAG on WhatsApp"
     },
-    description: "Passionate about creating systems that convert operational chaos into scalable businesses. Specialized in full-stack development, automation, complex integrations, fintech, e-commerce, and AI-driven systems.",
+    description: "Two production cases, both shipped end-to-end: TimonChat (AI WhatsApp platform) and Edge Workshop (custom product configurator).",
     your_img_url: ""
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Full-Stack Engineer and Acting CTO with hands-on experience turning traditional businesses into scalable SaaS ecosystems. I specialize in fintech, e-commerce automation, and AI-driven systems — from architecture to deployment. Hybrid profile: engineer, product builder, tech leader, and business operator. With an entrepreneurial mindset, strong results orientation, and the ability to find opportunities where others see operational friction. Passionate about sailing and nautical navigation — reading complex variables, making real-time decisions, and maintaining focus under pressure."
+    aboutme: "Full Stack Developer building AI SaaS in production. I ship multi-tenant AI products end-to-end — WhatsApp bots powered by Claude + RAG, and custom product configurators with Stripe. Currently delivering for clients in Argentina and Australia. Two production cases, both shipped from scope to deployment: TimonChat (AI WhatsApp platform) and Edge Workshop (custom product configurator)."
 };
 
 const workExperience = [
@@ -176,24 +176,24 @@ const worktimeline = [
 const skills2 = {
     programmingLanguages: ["JavaScript", "TypeScript", "Python"],
     frameworks: ["React", "Next.js", "Node.js", "NestJS", "Express"],
-    cloudServices: ["AWS", "Google Cloud", "Firebase", "Docker", "Vercel"],
-    automation: ["n8n", "GPT", "Claude", "Gemini"],
-    other: ["Scrum & Agile", "API Integration", "System Architecture"]
+    cloudServices: ["AWS", "Supabase", "Vercel", "Docker"],
+    ai: ["Claude API", "OpenAI API", "RAG", "Qdrant"],
+    other: ["Multi-tenant architecture", "Meta WhatsApp Cloud API", "Stripe", "API Integration"]
 };
 
 const skills = [
+    { name: "Claude API", value: 92 },
+    { name: "OpenAI API", value: 88 },
+    { name: "RAG / Qdrant", value: 85 },
+    { name: "Multi-tenant Architecture", value: 86 },
+    { name: "Meta WhatsApp Cloud API", value: 88 },
+    { name: "Supabase / PostgreSQL", value: 85 },
     { name: "JavaScript / TypeScript", value: 90 },
     { name: "React / Next.js", value: 88 },
     { name: "Node.js / NestJS", value: 85 },
-    { name: "Python / Flask", value: 75 },
+    { name: "Stripe / Payments", value: 85 },
     { name: "AWS / Cloud Infrastructure", value: 78 },
-    { name: "PostgreSQL / MongoDB", value: 80 },
-    { name: "Docker / DevOps", value: 70 },
-    { name: "AI & Automation (n8n, GPT)", value: 82 },
-    { name: "Stripe / Payments", value: 80 },
     { name: "REST & GraphQL APIs", value: 88 },
-    { name: "Figma / Product Design", value: 72 },
-    { name: "Scrum / Tech Leadership", value: 85 },
 ];
 
 const services = [
@@ -225,9 +225,27 @@ const services = [
 
 const dataportfolio = [
     {
-        title: "Custom Product Configurator Webapp with Stripe Integration",
+        title: "TimonChat — AI Sales & Reservations Bot for WhatsApp",
+        role: "Founder & Full Stack Developer",
+        description: "Multi-tenant SaaS platform built from scratch. Two-step AI pipeline: GPT-4.1-mini classifies intent and retrieves context via RAG (Qdrant), Claude Sonnet generates responses with configurable personality per tenant. Detects purchase intent and hands off to humans automatically. Deployed and operational on Meta WhatsApp Cloud API. First pilot: UluWind, a wingfoiling school in Córdoba, Argentina.",
+        skills: [
+            "Node.js",
+            "Supabase",
+            "Claude API",
+            "OpenAI API",
+            "Qdrant (RAG)",
+            "Meta WhatsApp Cloud API",
+            "Multi-tenant Architecture",
+            "Intent Classification",
+            "Human Handoff"
+        ],
+        category: "AI SaaS / Multi-tenant",
+        link: "https://github.com/Ivancho894/timonchat-showcase/blob/main/README.md"
+    },
+    {
+        title: "Edge Workshop — Custom Product Configurator with Stripe",
         role: "Full Stack Developer",
-        description: "Built a complete product configurator webapp for Edge Workshop, a premium custom letterbox manufacturer in Perth, Australia. Customers can configure orientation, size, finish, color, font, house number, and add-ons in real time, see a live visual preview, get instant pricing, and pay through Stripe. Replaced their manual quoting process (phone + email) with a 24/7 online platform. Includes automated email confirmations and an admin panel to manage orders and pricing without developer involvement. Delivered in 5 weeks from scope to production.",
+        description: "Built a complete product configurator webapp for Edge Workshop, a premium custom letterbox manufacturer in Perth, Australia. Customers configure orientation, size, finish, color, font, house number, and add-ons in real time, see a live visual preview, get instant pricing, and pay through Stripe. Replaced their manual quoting process (phone + email) with a 24/7 online platform. Includes automated email confirmations and an admin panel to manage orders and pricing without developer involvement. Delivered in 5 weeks from scope to production.",
         skills: [
             "React / Next.js",
             "Node.js",
@@ -259,28 +277,10 @@ const dataportfolio = [
         link: "https://drive.google.com/file/d/1TkwwuUORCbHGPow_lm1ZPb3mqE_qXdFr/view?ths=true"
     },
     {
-        title: "AI Restaurant Call Manager",
-        description: "AI-powered call manager that handles gastronomy reservations automatically via voice and messaging.",
-        category: "AI / Automation",
-        link: "https://github.com/Ivancho894"
-    },
-    {
-        title: "Nautical School AI Chatbot",
-        description: "Intelligent chatbot assistant for a nautical school — answers questions, schedules lessons, manages enrollments.",
-        category: "AI / Education",
-        link: "https://github.com/Ivancho894"
-    },
-    {
         title: "Boats Marketplace",
         description: "Full-stack boat buying/selling platform with MercadoPago payments, real-time messaging, and Scrum-managed delivery.",
         category: "Web App",
         link: "https://github.com/Ivancho894/Nautica-Rios-Web-Front"
-    },
-    {
-        title: "Automated Trading Bot",
-        description: "Automated trading bot with MetaTrader and Interactive Brokers integrations for algorithmic strategy execution.",
-        category: "FinTech / Automation",
-        link: "https://github.com/Ivancho894"
     }
 ];
 

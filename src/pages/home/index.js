@@ -21,15 +21,15 @@ export const Home = () => {
       <section id="home" className="hero-section">
         <div className="hero-inner">
           <div className="hero-heading">
-            <h1 className="hero-title-line1">FULL-STACK</h1>
-            <h1 className="hero-title-line2">ENGINEER</h1>
+            <h1 className="hero-title-line1">FULL STACK</h1>
+            <h1 className="hero-title-line2">DEVELOPER</h1>
           </div>
           <p className="hero-tagline">
-            <span>Engineer mindset.</span>
-            <span>Founder vision.</span>
-            <span>Operator execution.</span>
+            <span>Building AI SaaS in Production.</span>
           </p>
-          <p className="hero-desc">{introdata.description}</p>
+          <p className="hero-desc">
+            I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia.
+          </p>
           <div className="hero-stats">
             <div className="stat-item">
               <span className="stat-number">+5</span>
@@ -50,14 +50,14 @@ export const Home = () => {
             <div className="hero-card orange">
               <BiLayerPlus className="hero-card-icon" />
               <div className="hero-card-content">
-                <p className="hero-card-title">SAAS, FINTECH,<br />AUTOMATION</p>
+                <p className="hero-card-title">AI WHATSAPP BOTS,<br />RAG, MULTI-TENANT</p>
               </div>
               <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>
             <div className="hero-card lime">
               <RiLayoutGridLine className="hero-card-icon" />
               <div className="hero-card-content">
-                <p className="hero-card-title">REACT, NODE.JS,<br />AWS, AI SYSTEMS</p>
+                <p className="hero-card-title">CLAUDE, NODE.JS,<br />SUPABASE, STRIPE</p>
               </div>
               <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>
