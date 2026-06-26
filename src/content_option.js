@@ -227,7 +227,7 @@ const dataportfolio = [
     {
         title: "TimonChat — AI Sales & Reservations Bot for WhatsApp",
         role: "Founder & Full Stack Developer",
-        description: "Multi-tenant SaaS platform built from scratch. Two-step AI pipeline: GPT-4.1-mini classifies intent and retrieves context via RAG (Qdrant), Claude Sonnet generates responses with configurable personality per tenant. Detects purchase intent and hands off to humans automatically. Deployed and operational on Meta WhatsApp Cloud API. First pilot: UluWind, a wingfoiling school in Córdoba, Argentina.",
+        description: "Multi-tenant SaaS platform built from scratch. Two-step AI pipeline: GPT-4.1-mini classifies intent and retrieves context via RAG (Qdrant), Claude Sonnet generates responses with configurable personality per tenant. Detects purchase intent and hands off to humans automatically. Deployed and operational on Meta WhatsApp Cloud API. First pilot: UluWind, a wingfoiling school with watersports equipment sales in Córdoba, Argentina.",
         skills: [
             "Node.js",
             "Supabase",
