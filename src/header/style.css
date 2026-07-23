@@ -15,6 +15,17 @@
   height: 60px;
 }
 
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 0 20px;
+    height: 54px;
+  }
+
+  .nav_ac {
+    font-size: 1rem;
+  }
+}
+
 .menu__button {
   color: var(--text-color);
   background: none;

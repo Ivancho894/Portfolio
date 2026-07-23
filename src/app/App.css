@@ -76,25 +76,54 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 24px 20px 16px;
+    padding: 14px 16px 12px;
     border-left: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   }
+  /* Compact identity strip: photo + name + badge + socials in one row.
+     The bio is hidden here — the hero right below says the same thing. */
   .app-sidebar .profile-card {
     flex-direction: row;
+    align-items: stretch;
     max-width: 100%;
-    border-radius: 16px;
+    border-radius: 14px;
     overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
   }
   .app-sidebar .profile-image-wrap {
-    width: 110px;
-    height: 130px;
+    width: 86px;
+    height: auto;
+    min-height: 96px;
     flex-shrink: 0;
   }
   .app-sidebar .profile-card-body {
     align-items: flex-start;
     text-align: left;
-    padding: 16px;
+    padding: 12px 14px;
+    gap: 0;
+    justify-content: center;
+  }
+  .app-sidebar .profile-name {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .app-sidebar .profile-badge {
+    padding: 4px 10px;
+    margin-bottom: 8px;
+  }
+  .app-sidebar .badge-text {
+    font-size: 10px;
+  }
+  .app-sidebar .profile-bio {
+    display: none;
+  }
+  .app-sidebar .profile-socials {
+    gap: 10px;
+  }
+  .app-sidebar .profile-socials a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
   }
   .app-content {
     border-left: none;

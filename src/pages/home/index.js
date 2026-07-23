@@ -30,6 +30,14 @@ export const Home = () => {
           <p className="hero-desc">
             I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia.
           </p>
+          <div className="hero-cta">
+            <a href="#contact" className="hero-cta-primary">
+              Let's talk <FiArrowUpRight />
+            </a>
+            <a href="#projects" className="hero-cta-secondary">
+              View projects
+            </a>
+          </div>
           <div className="hero-stats">
             <div className="stat-item">
               <span className="stat-number">+5</span>
@@ -50,14 +58,14 @@ export const Home = () => {
             <div className="hero-card orange">
               <BiLayerPlus className="hero-card-icon" />
               <div className="hero-card-content">
-                <p className="hero-card-title">AI WHATSAPP BOTS,<br />RAG, MULTI-TENANT</p>
+                <p className="hero-card-title">AI WHATSAPP BOTS, <br />RAG, MULTI-TENANT</p>
               </div>
               <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>
             <div className="hero-card lime">
               <RiLayoutGridLine className="hero-card-icon" />
               <div className="hero-card-content">
-                <p className="hero-card-title">CLAUDE, NODE.JS,<br />SUPABASE, STRIPE</p>
+                <p className="hero-card-title">CLAUDE, NODE.JS, <br />SUPABASE, STRIPE</p>
               </div>
               <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>

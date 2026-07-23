@@ -141,6 +141,63 @@
   margin: 0 0 40px;
 }
 
+/* CTA row — hidden on desktop (hero cards cover that role), shown on mobile */
+.hero-cta {
+  display: none;
+}
+
+.hero-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 13px 24px;
+  border-radius: 100px;
+  background: var(--accent-orange);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta-primary:hover,
+.hero-cta-primary:active {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(232, 93, 4, 0.35);
+}
+
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 24px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--secondary-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-cta-secondary:hover,
+.hero-cta-secondary:active {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+[data-theme="light"] .hero-cta-secondary {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
 /* Stats */
 .hero-stats {
   display: flex;
@@ -704,25 +761,126 @@
 }
 
 @media (max-width: 768px) {
-  .section-inner,
-  .hero-inner {
-    padding: 50px 24px;
+  .section-inner {
+    padding: 44px 20px;
   }
 
+  .hero-inner {
+    padding: 36px 20px 44px;
+  }
+
+  /* Tighter, punchier hero typography */
+  .hero-title-line1,
+  .hero-title-line2 {
+    font-size: clamp(2.75rem, 13vw, 4.5rem);
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+  }
+
+  .hero-heading {
+    margin-bottom: 16px;
+  }
+
+  .hero-tagline {
+    margin: 14px 0 14px;
+  }
+
+  .hero-tagline span {
+    font-size: 12px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  /* CTAs surface on mobile — first tappable action above the fold */
+  .hero-cta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    flex: 1;
+    padding: 14px 10px;
+    font-size: 12px;
+  }
+
+  /* Stats as an even 3-column strip instead of a wrapping row */
   .hero-stats {
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  [data-theme="light"] .hero-stats {
+    border-top-color: rgba(0, 0, 0, 0.08);
   }
 
   .stat-divider {
     display: none;
   }
 
+  .stat-number {
+    font-size: 1.9rem;
+  }
+
+  .stat-label {
+    font-size: 9px;
+    margin-top: 4px;
+  }
+
+  /* Hero cards collapse into compact horizontal rows */
   .hero-cards {
     flex-direction: column;
+    gap: 10px;
   }
 
   .hero-card {
     max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: 14px;
+  }
+
+  .hero-card-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .hero-card-title {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .hero-card-title br {
+    display: none;
+  }
+
+  .hero-card-arrow {
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  /* Section headings scale down with the viewport */
+  .section-title-main,
+  .section-title-dim {
+    font-size: clamp(2.1rem, 10vw, 3rem);
+  }
+
+  .section-heading {
+    margin-bottom: 32px;
   }
 
   .exp-row {
@@ -746,6 +904,10 @@
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-row {
+    padding: 20px 0;
   }
 }
 
