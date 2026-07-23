@@ -28,6 +28,15 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Anchored sections clear the 60px sticky header */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -74,6 +83,13 @@ p {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* The animated cursor is pointless (and distracting) on touch screens */
+@media (hover: none), (pointer: coarse) {
+  .cursor__dot {
+    display: none;
+  }
 }
 
 .cursor__dot div {
