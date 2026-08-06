@@ -28,7 +28,7 @@ export const Home = () => {
             <span>Building AI SaaS in Production.</span>
           </p>
           <p className="hero-desc">
-            I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia.
+            I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Available to work and open to new opportunities.
           </p>
           <div className="hero-cta">
             <a href="#contact" className="hero-cta-primary">

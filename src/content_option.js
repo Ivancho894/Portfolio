@@ -287,7 +287,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "hello@ivanserralta.com",
     YOUR_FONE: "+54 3541 566295",
-    description: "Open to freelance projects, long-term partnerships, and CTO-as-a-Service engagements. Let's talk."
+    description: "Open to new opportunities — available for freelance projects, contractor engagements, and full-time positions. Let's talk."
 };
 
 const socialprofiles = {
