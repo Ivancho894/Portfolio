@@ -1,10 +1,13 @@
 import React from "react";
 import "./style.css";
-import { socialprofils } from "../../content_option";
 import YoImage from "../../assets/images/Yo.png";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const ProfileCard = () => {
+  const { t } = useLanguage();
+  const { socialprofils, ui } = t;
+
   return (
     <div className="profile-card">
       <div className="profile-image-wrap">
@@ -14,10 +17,10 @@ const ProfileCard = () => {
         <h2 className="profile-name">Iván Serralta</h2>
         <div className="profile-badge">
           <span className="badge-dot"></span>
-          <span className="badge-text">Available for work</span>
+          <span className="badge-text">{ui.profile.available}</span>
         </div>
         <p className="profile-bio">
-          Building AI SaaS in production — multi-tenant WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.
+          {ui.profile.bio}
         </p>
         <div className="profile-socials">
           {socialprofils.github && (

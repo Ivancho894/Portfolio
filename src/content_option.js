@@ -323,6 +323,400 @@ const socialprofils = {
 
 const logotext = "IVAN SERRALTA";
 
+const ui = {
+    nav: {
+        home: "Home",
+        projects: "Projects",
+        experience: "Experience",
+        services: "Services",
+        skills: "Skills",
+        contact: "Contact",
+        fullTimeline: "Full Timeline",
+        certificates: "Certificates",
+    },
+    hero: {
+        titleLine1: "FULL STACK",
+        titleLine2: "DEVELOPER",
+        tagline: "Building AI SaaS in Production.",
+        description: "I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia.",
+        ctaPrimary: "Let's talk",
+        ctaSecondary: "View projects",
+        stats: [
+            { number: "+5", label: ["YEARS OF", "EXPERIENCE"] },
+            { number: "+20", label: ["PROJECTS", "COMPLETED"] },
+            { number: "3", label: ["COUNTRIES", "WORKED"] },
+        ],
+        cards: [
+            { title: ["AI WHATSAPP BOTS,", "RAG, MULTI-TENANT"] },
+            { title: ["CLAUDE, NODE.JS,", "SUPABASE, STRIPE"] },
+        ],
+    },
+    sections: {
+        projects: ["RECENT", "PROJECTS"],
+        experience: ["WORK", "EXPERIENCE"],
+        services: ["WHAT I", "BUILD"],
+        skills: ["TECH", "STACK"],
+        contact: ["LET'S", "TALK"],
+    },
+    buttons: {
+        viewFullTimeline: "View full timeline",
+        seeAllServices: "See all services",
+    },
+    profile: {
+        available: "Available for work",
+        bio: "Building AI SaaS in production — multi-tenant WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.",
+    },
+    timeline: {
+        title: "My Professional Timeline",
+    },
+    card: {
+        techStack: "Tech Stack:",
+        frontEnd: "Front End",
+        backEnd: "Back End",
+        database: "Database",
+        apis: "APIs",
+        info: "+ Info",
+        prevImage: "Previous image",
+        nextImage: "Next image",
+        showImage: "Show image",
+        close: "Close",
+    },
+    certificatesPage: {
+        title: "Certificates",
+        view: "view certificate",
+    },
+    aboutPage: {
+        title: "About me",
+        servicesHeading: "services",
+        skillsHeading: "Skills",
+    },
+    contactPage: {
+        title: "Contact Me",
+        getInTouch: "Get in touch",
+        email: "Email:",
+        phone: "Phone:",
+    },
+    servicesPage: {
+        metaTitle: "Services",
+        metaDescription: "Service catalog for SaaS development, automation, trading, e-commerce, and DevOps.",
+        eyebrow: "Services",
+        heroTitle: "I build systems that automate businesses.",
+        heroText: "I design and automate end-to-end digital products: from SaaS MVPs to cloud infrastructure and trading automations.",
+        emailBtn: "Send me an email",
+        pastWork: "See past work",
+        benefits: "Benefits",
+        technologies: "Technologies",
+        askAddons: "Ask about add-ons",
+        modalTitle: "Get in touch",
+        modalSubtitle: "Drop me an email and I'll reply within 24 hours.",
+        modalDivider: "or prefer a call?",
+        modalCall: "Book a free 15-minute call",
+        modalClose: "Close",
+    },
+    langToggle: {
+        label: "Language",
+        spanish: "Español",
+        english: "English",
+    },
+};
+
+const serviceCatalog = [
+    {
+        id: "saas",
+        icon: "🧩",
+        title: "SaaS & Web Apps",
+        subtitle: "Development of SaaS platforms and complete admin dashboards.",
+        services: [
+            {
+                name: "SaaS Dashboard Development",
+                description:
+                    "Implementation of dashboards in Next.js with authentication, key metrics, subscriptions, and admin tools.",
+                benefits: [
+                    "Secure login with user management",
+                    "Real-time metrics panel",
+                    "Recurring billing integrated with Stripe",
+                ],
+                technologies: ["Next.js", "Firebase", "Stripe"],
+            },
+            {
+                name: "Custom Admin Panel",
+                description:
+                    "Internal control with role management, permissions, and reports tailored to your operation.",
+                benefits: [
+                    "Advanced roles and auditing",
+                    "Exportable reports",
+                    "Guided onboarding for teams",
+                ],
+                technologies: ["React", "Node.js", "Prisma", "PostgreSQL"],
+            },
+            {
+                name: "SaaS MVP from Scratch",
+                description: "Functional prototype launched in under 3 weeks.",
+                benefits: [
+                    "Scalable architecture from day one",
+                    "Continuous delivery and documentation",
+                    "Includes CI/CD pipelines and monitoring",
+                ],
+                technologies: ["Next.js", "Node.js", "AWS", "Prisma"],
+            },
+        ],
+        footer: {
+            focus: "Focused on startups, agencies, and companies without a CTO.",
+            cta: "Book a call",
+        },
+    },
+    {
+        id: "automation",
+        icon: "⚙️",
+        title: "Automation & APIs",
+        subtitle: "Secure integrations to cut repetitive tasks and connect your systems.",
+        services: [
+            {
+                name: "REST / WebSocket API Integrations",
+                description:
+                    "Connect platforms like Stripe, Shopify, MercadoPago, or MetaTrader with your product.",
+                benefits: [
+                    "Centralized logs and error handling",
+                    "Secure and scalable authentication",
+                    "Continuous integration monitoring",
+                ],
+                technologies: ["Node.js", "Python", "Firebase"],
+            },
+            {
+                name: "SaaS Workflow Automation",
+                description:
+                    "Sync CRM, billing, and notifications with scheduled jobs and webhooks.",
+                benefits: [
+                    "Time savings on repetitive tasks",
+                    "Reduced human errors",
+                    "Full process traceability",
+                ],
+                technologies: ["Node.js", "cron jobs", "n8n", "Zapier"],
+            },
+            {
+                name: "Custom Microservices and Scripts",
+                description:
+                    "Custom automations ready to run on AWS Lambda or containers.",
+                benefits: [
+                    "Automatic scaling",
+                    "Built-in alerts and metrics",
+                    "Simple maintenance",
+                ],
+                technologies: ["AWS", "Python", "Node.js"],
+            },
+        ],
+        footer: {
+            focus: "Benefits: time savings, fewer errors, and full traceability.",
+            cta: "Request a quote",
+        },
+    },
+    {
+        id: "trading",
+        icon: "💸",
+        title: "Trading & FinTech Solutions",
+        subtitle: "Automated systems for trading and account management with live metrics.",
+        services: [
+            {
+                name: "MetaTrader Integration (MT4/MT5)",
+                description:
+                    "Secure bridge to execute trades from web or backend into your trading accounts.",
+                benefits: [
+                    "Millisecond execution",
+                    "Logs and audits per trade",
+                    "Multi-account support",
+                ],
+                technologies: ["MetaApi", "MT4", "MT5", "Node.js"],
+            },
+            {
+                name: "Funding Control & Metrics Dashboard",
+                description:
+                    "FTMO-style dashboard with balance, equity, drawdown, and custom goals.",
+                benefits: [
+                    "Real-time alerts",
+                    "Responsive dashboards",
+                    "Downloadable reports",
+                ],
+                technologies: ["Next.js", "AWS", "PostgreSQL"],
+            },
+            {
+                name: "Custom Trading Bot",
+                description:
+                    "Automated strategies in Python or Node.js with technical indicators and risk control.",
+                benefits: [
+                    "Backtesting with historical data",
+                    "Configurable risk management",
+                    "Automated deployment",
+                ],
+                technologies: ["Python", "Node.js", "AWS Lambda"],
+            },
+        ],
+        footer: {
+            focus: "Ideal for traders, brokers, and fintech startups.",
+            cta: "Book a call",
+        },
+    },
+    {
+        id: "ecommerce",
+        icon: "🛍️",
+        title: "E-commerce & Marketplace Automation",
+        subtitle: "Connect your stores with external systems to automate payments, inventory, and notifications.",
+        services: [
+            {
+                name: "Shopify / Mirakl Integration",
+                description:
+                    "Link your e-commerce with ERP, CRM, or other systems to centralize information.",
+                benefits: [
+                    "Synced catalog",
+                    "Automatic inventory updates",
+                    "Unified orders",
+                ],
+                technologies: ["Shopify API", "Node.js", "Firebase"],
+            },
+            {
+                name: "Payments and Shipping Automation",
+                description:
+                    "Configure flows with Stripe, MercadoPago, and PayPal for payments, invoices, and notifications.",
+                benefits: [
+                    "Real-time payment confirmation",
+                    "Inventory alerts",
+                    "Transactional emails",
+                ],
+                technologies: ["Stripe", "MercadoPago", "PayPal"],
+            },
+            {
+                name: "Centralized Catalog Management",
+                description:
+                    "Manage products and orders from a single panel with roles and permissions.",
+                benefits: [
+                    "Minimal learning curve",
+                    "Multi-store control",
+                    "History and traceability",
+                ],
+                technologies: ["Next.js", "Node.js", "PostgreSQL"],
+            },
+        ],
+        footer: {
+            focus: "Suggested stack: Node.js, Next.js, Shopify API, MercadoPago API, Stripe, Firebase.",
+            cta: "Request a quote",
+        },
+    },
+    {
+        id: "devops",
+        icon: "🧠",
+        title: "DevOps & Cloud Infrastructure",
+        subtitle: "Scalable, secure, and automated environments ready for production.",
+        services: [
+            {
+                name: "Full AWS Setup",
+                description:
+                    "Infrastructure with Lambda, EC2, S3, RDS, and CI/CD pipelines ready for your team.",
+                benefits: [
+                    "Infrastructure as code",
+                    "Automated security and backups",
+                    "Monitoring with CloudWatch",
+                ],
+                technologies: ["AWS", "CloudFormation", "GitHub Actions"],
+            },
+            {
+                name: "Automated Deployments",
+                description:
+                    "Pipelines for Vercel, Docker, or Railway with rollbacks and pre-release review.",
+                benefits: [
+                    "Continuous delivery",
+                    "Versioning and approvals",
+                    "Built-in observability",
+                ],
+                technologies: ["Docker", "Railway", "Vercel"],
+            },
+            {
+                name: "Monitoring, Logs & Backups",
+                description:
+                    "Implement dashboards, alerts, and automated backups to keep your uptime high.",
+                benefits: [
+                    "Proactive alerts",
+                    "Centralized log history",
+                    "Disaster recovery",
+                ],
+                technologies: ["CloudWatch", "Grafana", "AWS Backup"],
+            },
+        ],
+        footer: {
+            focus: "Stack: AWS, Railway, GitHub Actions, Docker, CloudWatch.",
+            cta: "Book a call",
+        },
+    },
+    {
+        id: "consulting",
+        icon: "👨‍💼",
+        title: "Consulting & Technical Leadership",
+        subtitle: "Technical support for founders and teams that need direction.",
+        services: [
+            {
+                name: "CTO-as-a-Service",
+                description:
+                    "Ongoing technical mentorship to define roadmap, hire talent, and scale products.",
+                benefits: [
+                    "Weekly tailored meetings",
+                    "Tracking of technical OKRs",
+                    "Network of partners and vendors",
+                ],
+                technologies: ["Notion", "Linear", "Slack"],
+            },
+            {
+                name: "Architecture Review",
+                description:
+                    "Code and architecture audit to identify risks and opportunities.",
+                benefits: [
+                    "Executive report with findings",
+                    "Clear priorities and action plan",
+                    "Review session with your team",
+                ],
+                technologies: ["AWS", "Next.js", "Node.js"],
+            },
+            {
+                name: "Roadmap Planning",
+                description:
+                    "Design of a technical roadmap with estimates, milestones, and dependencies.",
+                benefits: [
+                    "Collaborative workshops",
+                    "Roadmap in collaborative tools",
+                    "Bi-weekly follow-up",
+                ],
+                technologies: ["Notion", "Miro", "Jira"],
+            },
+        ],
+        footer: {
+            focus: "Ideal for founders, startups without a technical team, and agencies.",
+            cta: "Book a call",
+        },
+    },
+];
+
+const serviceExtras = {
+    title: "Extras / Optional Add-ons",
+    icon: "🌐",
+    description:
+        "Perfect add-ons to expand your project or prepare a roadmap of improvements.",
+    services: [
+        {
+            name: "Secure Authentication Setup",
+            technologies: ["Firebase", "Auth0", "JWT"],
+        },
+        {
+            name: "Multi-channel Push Notifications",
+            technologies: ["FCM", "OneSignal"],
+        },
+        {
+            name: "Responsive Dashboards and Custom UI",
+            technologies: ["Tailwind CSS", "shadcn/ui"],
+        },
+        {
+            name: "Google Sheets / Notion / CRM Integrations",
+            technologies: ["Google Sheets API", "Notion API", "Zapier"],
+        },
+    ],
+};
+
 export {
     meta,
     introdata,
@@ -337,5 +731,8 @@ export {
     socialprofiles,
     socialprofils,
     workExperience,
-    logotext
+    logotext,
+    ui,
+    serviceCatalog,
+    serviceExtras
 };

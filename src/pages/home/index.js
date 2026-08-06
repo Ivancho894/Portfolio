@@ -1,14 +1,17 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { introdata, meta, dataportfolio, services, skills, contactConfig, socialprofils, workExperience } from "../../content_option";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight, FiMail, FiPhone } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { BiLayerPlus } from "react-icons/bi";
 import { RiLayoutGridLine } from "react-icons/ri";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 export const Home = () => {
+  const { t } = useLanguage();
+  const { meta, dataportfolio, services, skills, contactConfig, socialprofils, workExperience, ui } = t;
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -21,51 +24,46 @@ export const Home = () => {
       <section id="home" className="hero-section">
         <div className="hero-inner">
           <div className="hero-heading">
-            <h1 className="hero-title-line1">FULL STACK</h1>
-            <h1 className="hero-title-line2">DEVELOPER</h1>
+            <h1 className="hero-title-line1">{ui.hero.titleLine1}</h1>
+            <h1 className="hero-title-line2">{ui.hero.titleLine2}</h1>
           </div>
           <p className="hero-tagline">
-            <span>Building AI SaaS in Production.</span>
+            <span>{ui.hero.tagline}</span>
           </p>
           <p className="hero-desc">
-            I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia.
+            {ui.hero.description}
           </p>
           <div className="hero-cta">
             <a href="#contact" className="hero-cta-primary">
-              Let's talk <FiArrowUpRight />
+              {ui.hero.ctaPrimary} <FiArrowUpRight />
             </a>
             <a href="#projects" className="hero-cta-secondary">
-              View projects
+              {ui.hero.ctaSecondary}
             </a>
           </div>
           <div className="hero-stats">
-            <div className="stat-item">
-              <span className="stat-number">+5</span>
-              <span className="stat-label">YEARS OF<br />EXPERIENCE</span>
-            </div>
-            <div className="stat-divider" />
-            <div className="stat-item">
-              <span className="stat-number">+20</span>
-              <span className="stat-label">PROJECTS<br />COMPLETED</span>
-            </div>
-            <div className="stat-divider" />
-            <div className="stat-item">
-              <span className="stat-number">3</span>
-              <span className="stat-label">COUNTRIES<br />WORKED</span>
-            </div>
+            {ui.hero.stats.map((stat, i) => (
+              <React.Fragment key={i}>
+                {i > 0 && <div className="stat-divider" />}
+                <div className="stat-item">
+                  <span className="stat-number">{stat.number}</span>
+                  <span className="stat-label">{stat.label[0]}<br />{stat.label[1]}</span>
+                </div>
+              </React.Fragment>
+            ))}
           </div>
           <div className="hero-cards">
             <div className="hero-card orange">
               <BiLayerPlus className="hero-card-icon" />
               <div className="hero-card-content">
-                <p className="hero-card-title">AI WHATSAPP BOTS, <br />RAG, MULTI-TENANT</p>
+                <p className="hero-card-title">{ui.hero.cards[0].title[0]} <br />{ui.hero.cards[0].title[1]}</p>
               </div>
               <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>
             <div className="hero-card lime">
               <RiLayoutGridLine className="hero-card-icon" />
               <div className="hero-card-content">
-                <p className="hero-card-title">CLAUDE, NODE.JS, <br />SUPABASE, STRIPE</p>
+                <p className="hero-card-title">{ui.hero.cards[1].title[0]} <br />{ui.hero.cards[1].title[1]}</p>
               </div>
               <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
             </div>
@@ -77,8 +75,8 @@ export const Home = () => {
       <section id="projects" className="projects-section">
         <div className="section-inner">
           <div className="section-heading">
-            <h2 className="section-title-main">RECENT</h2>
-            <h2 className="section-title-dim">PROJECTS</h2>
+            <h2 className="section-title-main">{ui.sections.projects[0]}</h2>
+            <h2 className="section-title-dim">{ui.sections.projects[1]}</h2>
           </div>
           <div className="projects-list">
             {dataportfolio.map((project, i) => (
@@ -107,8 +105,8 @@ export const Home = () => {
       <section id="experience" className="experience-section">
         <div className="section-inner">
           <div className="section-heading">
-            <h2 className="section-title-main">WORK</h2>
-            <h2 className="section-title-dim">EXPERIENCE</h2>
+            <h2 className="section-title-main">{ui.sections.experience[0]}</h2>
+            <h2 className="section-title-dim">{ui.sections.experience[1]}</h2>
           </div>
           <div className="experience-list">
             {workExperience.slice(0, 4).map((exp, i) => (
@@ -144,7 +142,7 @@ export const Home = () => {
           </div>
           <div className="section-cta">
             <Link to="/portfolio" className="cta-link">
-              View full timeline <FiArrowUpRight />
+              {ui.buttons.viewFullTimeline} <FiArrowUpRight />
             </Link>
           </div>
         </div>
@@ -154,8 +152,8 @@ export const Home = () => {
       <section id="services" className="services-section">
         <div className="section-inner">
           <div className="section-heading">
-            <h2 className="section-title-main">WHAT I</h2>
-            <h2 className="section-title-dim">BUILD</h2>
+            <h2 className="section-title-main">{ui.sections.services[0]}</h2>
+            <h2 className="section-title-dim">{ui.sections.services[1]}</h2>
           </div>
           <div className="services-grid">
             {services.map((svc, i) => (
@@ -168,7 +166,7 @@ export const Home = () => {
           </div>
           <div className="section-cta">
             <Link to="/services" className="cta-link">
-              See all services <FiArrowUpRight />
+              {ui.buttons.seeAllServices} <FiArrowUpRight />
             </Link>
           </div>
         </div>
@@ -178,8 +176,8 @@ export const Home = () => {
       <section id="skills" className="skills-section">
         <div className="section-inner">
           <div className="section-heading">
-            <h2 className="section-title-main">TECH</h2>
-            <h2 className="section-title-dim">STACK</h2>
+            <h2 className="section-title-main">{ui.sections.skills[0]}</h2>
+            <h2 className="section-title-dim">{ui.sections.skills[1]}</h2>
           </div>
           <div className="skills-grid">
             {skills.map((skill, i) => (
@@ -201,8 +199,8 @@ export const Home = () => {
       <section id="contact" className="contact-section">
         <div className="section-inner">
           <div className="section-heading">
-            <h2 className="section-title-main">LET'S</h2>
-            <h2 className="section-title-dim">TALK</h2>
+            <h2 className="section-title-main">{ui.sections.contact[0]}</h2>
+            <h2 className="section-title-dim">{ui.sections.contact[1]}</h2>
           </div>
           <div className="contact-body">
             <p className="contact-desc">{contactConfig.description}</p>
