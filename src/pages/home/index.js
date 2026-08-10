@@ -28,7 +28,7 @@ export const Home = () => {
             <span>Building AI SaaS in Production.</span>
           </p>
           <p className="hero-desc">
-            I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Available to work and open to new opportunities.
+            I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.
           </p>
           <div className="hero-cta">
             <a href="#contact" className="hero-cta-primary">
@@ -40,13 +40,13 @@ export const Home = () => {
           </div>
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">+5</span>
+              <span className="stat-number">4</span>
               <span className="stat-label">YEARS OF<br />EXPERIENCE</span>
             </div>
             <div className="stat-divider" />
             <div className="stat-item">
-              <span className="stat-number">+20</span>
-              <span className="stat-label">PROJECTS<br />COMPLETED</span>
+              <span className="stat-number">3</span>
+              <span className="stat-label">PRODUCTS IN<br />PRODUCTION</span>
             </div>
             <div className="stat-divider" />
             <div className="stat-item">
@@ -60,14 +60,14 @@ export const Home = () => {
               <div className="hero-card-content">
                 <p className="hero-card-title">AI WHATSAPP BOTS, <br />RAG, MULTI-TENANT</p>
               </div>
-              <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
+              <a href="#projects" className="hero-card-arrow"><FiArrowUpRight /></a>
             </div>
             <div className="hero-card lime">
               <RiLayoutGridLine className="hero-card-icon" />
               <div className="hero-card-content">
                 <p className="hero-card-title">CLAUDE, NODE.JS, <br />SUPABASE, STRIPE</p>
               </div>
-              <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
+              <a href="#projects" className="hero-card-arrow"><FiArrowUpRight /></a>
             </div>
           </div>
         </div>
@@ -150,12 +150,12 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* ── SERVICES ── */}
+      {/* ── AREAS OF EXPERTISE ── */}
       <section id="services" className="services-section">
         <div className="section-inner">
           <div className="section-heading">
-            <h2 className="section-title-main">WHAT I</h2>
-            <h2 className="section-title-dim">BUILD</h2>
+            <h2 className="section-title-main">AREAS OF</h2>
+            <h2 className="section-title-dim">EXPERTISE</h2>
           </div>
           <div className="services-grid">
             {services.map((svc, i) => (
@@ -165,11 +165,6 @@ export const Home = () => {
                 <p className="service-desc">{svc.description}</p>
               </div>
             ))}
-          </div>
-          <div className="section-cta">
-            <Link to="/services" className="cta-link">
-              See all services <FiArrowUpRight />
-            </Link>
           </div>
         </div>
       </section>

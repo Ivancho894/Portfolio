@@ -5,7 +5,6 @@ import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
-import { Services } from "../pages/services";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Certificates } from "../pages/certificates";
 import { Privacy } from "../pages/privacy";
@@ -27,7 +26,6 @@ const AnimatedRoutes = withRouter(({ location , theme}) => (
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio theme={theme} />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/privacy" element={<Privacy />} />
