@@ -6,6 +6,7 @@ import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor from "../hooks/AnimatedCursor";
 import ProfileCard from "../components/profilecard";
+import { LanguageProvider } from "../i18n/LanguageContext";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -21,6 +22,7 @@ export default function App({ refreshApp }) {
   const [theme, settheme] = useState("dark");
 
   return (
+    <LanguageProvider>
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
         <AnimatedCursor
@@ -46,5 +48,6 @@ export default function App({ refreshApp }) {
         </div>
       </ScrollToTop>
     </Router>
+    </LanguageProvider>
   );
 }

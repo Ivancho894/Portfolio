@@ -3,8 +3,11 @@ import { createPortal } from "react-dom";
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import "./style.css";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const ExperienceCard = ({ theme, experience }) => {
+  const { t } = useLanguage();
+  const cardText = t.ui.card;
   const { period, icon, company, position, points, techStack, location, info, image } = experience;
   const images = useMemo(() => (Array.isArray(image) ? image : image ? [image] : []), [image]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -98,11 +101,11 @@ const ExperienceCard = ({ theme, experience }) => {
         </ul>
         {techStack && (
           <div className="tech-stack">
-            <h4>Tech Stack:</h4>
-            {techStack.frontEnd && <p>Front End: {techStack.frontEnd.join(", ")}</p>}
-            {techStack.backEnd && <p>Back End: {techStack.backEnd.join(", ")}</p>}
-            {techStack.database && <p>Database: {techStack.database.join(", ")}</p>}
-            {techStack.apis && <p>APIs: {techStack.apis.join(", ")}</p>}
+            <h4>{cardText.techStack}</h4>
+            {techStack.frontEnd && <p>{cardText.frontEnd}: {techStack.frontEnd.join(", ")}</p>}
+            {techStack.backEnd && <p>{cardText.backEnd}: {techStack.backEnd.join(", ")}</p>}
+            {techStack.database && <p>{cardText.database}: {techStack.database.join(", ")}</p>}
+            {techStack.apis && <p>{cardText.apis}: {techStack.apis.join(", ")}</p>}
           </div>
         )}
         {!!images.length && (
@@ -114,7 +117,7 @@ const ExperienceCard = ({ theme, experience }) => {
                     type="button"
                     className="carousel-arrow left"
                     onClick={handlePrevClick}
-                    aria-label="Imagen anterior"
+                    aria-label={cardText.prevImage}
                   >
                     ‹
                   </button>
@@ -122,7 +125,7 @@ const ExperienceCard = ({ theme, experience }) => {
                     type="button"
                     className="carousel-arrow right"
                     onClick={handleNextClick}
-                    aria-label="Imagen siguiente"
+                    aria-label={cardText.nextImage}
                   >
                     ›
                   </button>
@@ -144,7 +147,7 @@ const ExperienceCard = ({ theme, experience }) => {
                     type="button"
                     className={`carousel-indicator ${idx === currentIndex ? "active" : ""}`}
                     onClick={() => setCurrentIndex(idx)}
-                    aria-label={`Mostrar imagen ${idx + 1}`}
+                    aria-label={`${cardText.showImage} ${idx + 1}`}
                   />
                 ))}
               </div>
@@ -156,7 +159,7 @@ const ExperienceCard = ({ theme, experience }) => {
           createPortal(
             <div className="image-modal" role="dialog" aria-modal="true" onClick={closeModal}>
               <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
-                <button className="image-modal-close" type="button" onClick={closeModal} aria-label="Cerrar">
+                <button className="image-modal-close" type="button" onClick={closeModal} aria-label={cardText.close}>
                   ×
                 </button>
                 {images.length > 1 && (
@@ -165,7 +168,7 @@ const ExperienceCard = ({ theme, experience }) => {
                       type="button"
                       className="modal-arrow left"
                       onClick={handlePrevClick}
-                      aria-label="Imagen anterior"
+                      aria-label={cardText.prevImage}
                     >
                       ‹
                     </button>
@@ -173,7 +176,7 @@ const ExperienceCard = ({ theme, experience }) => {
                       type="button"
                       className="modal-arrow right"
                       onClick={handleNextClick}
-                      aria-label="Imagen siguiente"
+                      aria-label={cardText.nextImage}
                     >
                       ›
                     </button>
@@ -191,7 +194,7 @@ const ExperienceCard = ({ theme, experience }) => {
           )}
         {info && (
           <a href={info} target="_blank" rel="noopener noreferrer">
-            <button className="info-button" style={{ width: "100%", marginTop:"5" }} >+ Info</button>
+            <button className="info-button" style={{ width: "100%", marginTop:"5" }} >{cardText.info}</button>
           </a>
         )}
       </div>

@@ -336,6 +336,85 @@ const socialprofils = {
 
 const logotext = "IVAN SERRALTA";
 
+const ui = {
+    nav: {
+        home: "Home",
+        projects: "Projects",
+        experience: "Experience",
+        services: "Expertise",
+        skills: "Skills",
+        contact: "Contact",
+        fullTimeline: "Full Timeline",
+        certificates: "Certificates",
+    },
+    hero: {
+        titleLine1: "FULL STACK",
+        titleLine2: "DEVELOPER",
+        tagline: "Building AI SaaS in Production.",
+        description: "I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.",
+        ctaPrimary: "Let's talk",
+        ctaSecondary: "View projects",
+        stats: [
+            { number: "4", label: ["YEARS OF", "EXPERIENCE"] },
+            { number: "3", label: ["PRODUCTS IN", "PRODUCTION"] },
+            { number: "3", label: ["COUNTRIES", "WORKED"] },
+        ],
+        cards: [
+            { title: ["AI WHATSAPP BOTS,", "RAG, MULTI-TENANT"] },
+            { title: ["CLAUDE, NODE.JS,", "SUPABASE, STRIPE"] },
+        ],
+    },
+    sections: {
+        projects: ["RECENT", "PROJECTS"],
+        experience: ["WORK", "EXPERIENCE"],
+        services: ["AREAS OF", "EXPERTISE"],
+        skills: ["TECH", "STACK"],
+        contact: ["LET'S", "TALK"],
+    },
+    buttons: {
+        viewFullTimeline: "View full timeline",
+    },
+    profile: {
+        available: "Open to Software Engineer roles",
+        bio: "Building AI SaaS in production — multi-tenant WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.",
+    },
+    timeline: {
+        title: "My Professional Timeline",
+    },
+    card: {
+        techStack: "Tech Stack:",
+        frontEnd: "Front End",
+        backEnd: "Back End",
+        database: "Database",
+        apis: "APIs",
+        info: "+ Info",
+        prevImage: "Previous image",
+        nextImage: "Next image",
+        showImage: "Show image",
+        close: "Close",
+    },
+    certificatesPage: {
+        title: "Certificates",
+        view: "view certificate",
+    },
+    aboutPage: {
+        title: "About me",
+        servicesHeading: "services",
+        skillsHeading: "Skills",
+    },
+    contactPage: {
+        title: "Contact Me",
+        getInTouch: "Get in touch",
+        email: "Email:",
+        phone: "Phone:",
+    },
+    langToggle: {
+        label: "Language",
+        spanish: "Español",
+        english: "English",
+    },
+};
+
 export {
     meta,
     introdata,
@@ -350,5 +429,6 @@ export {
     socialprofiles,
     socialprofils,
     workExperience,
-    logotext
+    logotext,
+    ui
 };
