@@ -8,8 +8,7 @@ const getInitialLang = () => {
     if (typeof window === "undefined") return "en";
     const stored = localStorage.getItem("lang");
     if (stored === "en" || stored === "es") return stored;
-    const browser = (navigator.language || "en").toLowerCase();
-    return browser.startsWith("es") ? "es" : "en";
+    return "en";
 };
 
 const LanguageContext = createContext({
