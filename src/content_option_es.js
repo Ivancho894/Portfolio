@@ -64,6 +64,27 @@ const workExperience = [
         info: "https://drive.google.com/file/d/1EuKIlUwoJ2YmgLN6CqVozXZYbmDUFso-/view?usp=sharing"
     },
     {
+        position: "Ingeniero de Software",
+        company: "Leafpress",
+        period: "Mayo 2024 - Dic 2024",
+        icon: "./United-states_flag_icon_round.svg.png",
+        points: [
+            "Cumplí un rol clave en la mejora del desarrollo de la aplicación, tanto en el front-end como en el back-end.",
+            "Logré una mejora del 30% en la velocidad de la interfaz de usuario, optimizando significativamente los tiempos de carga y reduciendo las demoras de respuesta.",
+            "Implementé buenas prácticas avanzadas de rendimiento en el front-end y refiné los procesos del back-end.",
+            "Logros clave: reducción de los tiempos de carga en un 25%, aumento del engagement de usuarios en un 20% y uso de frameworks de vanguardia."
+        ],
+        location: "🇺🇸 San Francisco, Estados Unidos",
+        image: ['./64b0f881c8616ad7babbb7bb_aligned.png'],
+        techStack: {
+            frontEnd: ["React", "Redux", "CSS", "HTML", "Tailwind"],
+            backEnd: ["Node.js", "Firebase", "Stripe", "Google Cloud"],
+            database: ["PostgreSQL", "Sequelize", "AWS S3", "Firestore"],
+            apis: ["GPT", "Slack", "Weather"]
+        },
+        info: "https://www.linkedin.com/company/getleafpress"
+    },
+    {
         "position": "Integrador de Plataformas de Mensajería (Freelance)",
         "company": "Freelance",
         "period": "Feb 2025",
@@ -104,27 +125,6 @@ const workExperience = [
         },
         image: ["./image_original (3).png", "./image_original (4).png"],
         info: "https://drive.google.com/file/d/1FK4aCQh6A65nPthc4nFidfouBozzrQXp/view?usp=sharing"
-    },
-    {
-        position: "Ingeniero de Software",
-        company: "Leafpress",
-        period: "Mayo 2024 - Dic 2024",
-        icon: "./United-states_flag_icon_round.svg.png",
-        points: [
-            "Cumplí un rol clave en la mejora del desarrollo de la aplicación, tanto en el front-end como en el back-end.",
-            "Logré una mejora del 30% en la velocidad de la interfaz de usuario, optimizando significativamente los tiempos de carga y reduciendo las demoras de respuesta.",
-            "Implementé buenas prácticas avanzadas de rendimiento en el front-end y refiné los procesos del back-end.",
-            "Logros clave: reducción de los tiempos de carga en un 25%, aumento del engagement de usuarios en un 20% y uso de frameworks de vanguardia."
-        ],
-        location: "San Francisco, Estados Unidos",
-        image: ['./64b0f881c8616ad7babbb7bb_aligned.png'],
-        techStack: {
-            frontEnd: ["React", "Redux", "CSS", "HTML", "Tailwind"],
-            backEnd: ["Node.js", "Firebase", "Stripe", "Google Cloud"],
-            database: ["PostgreSQL", "Sequelize", "AWS S3", "Firestore"],
-            apis: ["GPT", "Slack", "Weather"]
-        },
-        info: "https://www.linkedin.com/company/getleafpress"
     },
     {
         position: "Desarrollador Web Full Stack — Marketplace de Barcos",

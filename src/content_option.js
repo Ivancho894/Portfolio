@@ -64,6 +64,27 @@ const workExperience = [
         info: "https://drive.google.com/file/d/1EuKIlUwoJ2YmgLN6CqVozXZYbmDUFso-/view?usp=sharing"
     },
     {
+        position: "Software Engineer",
+        company: "Leafpress",
+        period: "May 2024 - Dec 2024",
+        icon: "./United-states_flag_icon_round.svg.png",
+        points: [
+            "Played a pivotal role in enhancing both the front-end and back-end application development.",
+            "Led to a 30% improvement in user interface speed, significantly optimizing load times and reducing response delays.",
+            "Implemented advanced best practices for front-end performance and refined back-end processes.",
+            "Key achievements: reducing load times by 25%, enhancing user engagement by 20%, utilizing cutting-edge frameworks."
+        ],
+        location: "🇺🇸 San Francisco, United States",
+        image: ['./64b0f881c8616ad7babbb7bb_aligned.png'],
+        techStack: {
+            frontEnd: ["React", "Redux", "CSS", "HTML", "Tailwind"],
+            backEnd: ["Node.js", "Firebase", "Stripe", "Google Cloud"],
+            database: ["PostgreSQL", "Sequelize", "AWS S3", "Firestore"],
+            apis: ["GPT", "Slack", "Weather"]
+        },
+        info: "https://www.linkedin.com/company/getleafpress"
+    },
+    {
         "position": "Freelance Messaging Platform Integrator",
         "company": "Freelance",
         "period": "Feb 2025",
@@ -104,27 +125,6 @@ const workExperience = [
         },
         image: ["./image_original (3).png", "./image_original (4).png"],
         info: "https://drive.google.com/file/d/1FK4aCQh6A65nPthc4nFidfouBozzrQXp/view?usp=sharing"
-    },
-    {
-        position: "Software Engineer",
-        company: "Leafpress",
-        period: "May 2024 - Dec 2024",
-        icon: "./United-states_flag_icon_round.svg.png",
-        points: [
-            "Played a pivotal role in enhancing both the front-end and back-end application development.",
-            "Led to a 30% improvement in user interface speed, significantly optimizing load times and reducing response delays.",
-            "Implemented advanced best practices for front-end performance and refined back-end processes.",
-            "Key achievements: reducing load times by 25%, enhancing user engagement by 20%, utilizing cutting-edge frameworks."
-        ],
-        location: "San Francisco, United States",
-        image: ['./64b0f881c8616ad7babbb7bb_aligned.png'],
-        techStack: {
-            frontEnd: ["React", "Redux", "CSS", "HTML", "Tailwind"],
-            backEnd: ["Node.js", "Firebase", "Stripe", "Google Cloud"],
-            database: ["PostgreSQL", "Sequelize", "AWS S3", "Firestore"],
-            apis: ["GPT", "Slack", "Weather"]
-        },
-        info: "https://www.linkedin.com/company/getleafpress"
     },
     {
         position: "Full Stack Web Developer — Boats Marketplace",
