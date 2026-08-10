@@ -58,14 +58,14 @@ export const Home = () => {
               <div className="hero-card-content">
                 <p className="hero-card-title">{ui.hero.cards[0].title[0]} <br />{ui.hero.cards[0].title[1]}</p>
               </div>
-              <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
+              <a href="#projects" className="hero-card-arrow"><FiArrowUpRight /></a>
             </div>
             <div className="hero-card lime">
               <RiLayoutGridLine className="hero-card-icon" />
               <div className="hero-card-content">
                 <p className="hero-card-title">{ui.hero.cards[1].title[0]} <br />{ui.hero.cards[1].title[1]}</p>
               </div>
-              <Link to="/services" className="hero-card-arrow"><FiArrowUpRight /></Link>
+              <a href="#projects" className="hero-card-arrow"><FiArrowUpRight /></a>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* ── SERVICES ── */}
+      {/* ── AREAS OF EXPERTISE ── */}
       <section id="services" className="services-section">
         <div className="section-inner">
           <div className="section-heading">
@@ -163,11 +163,6 @@ export const Home = () => {
                 <p className="service-desc">{svc.description}</p>
               </div>
             ))}
-          </div>
-          <div className="section-cta">
-            <Link to="/services" className="cta-link">
-              {ui.buttons.seeAllServices} <FiArrowUpRight />
-            </Link>
           </div>
         </div>
       </section>

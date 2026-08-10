@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { useLanguage } from "../../i18n/LanguageContext";
 
-const SpainFlag = () => (
+const ArgentinaFlag = () => (
   <svg
     className="lang-flag"
     viewBox="0 0 60 40"
@@ -10,12 +10,13 @@ const SpainFlag = () => (
     aria-hidden="true"
     focusable="false"
   >
-    <rect width="60" height="40" fill="#AA151B" />
-    <rect y="10" width="60" height="20" fill="#F1BF00" />
+    <rect width="60" height="40" fill="#74ACDF" />
+    <rect y="13.33" width="60" height="13.34" fill="#fff" />
+    <circle cx="30" cy="20" r="4.5" fill="#F6B40E" stroke="#85340A" strokeWidth="0.6" />
   </svg>
 );
 
-const UKFlag = () => (
+const USAFlag = () => (
   <svg
     className="lang-flag"
     viewBox="0 0 60 40"
@@ -23,11 +24,18 @@ const UKFlag = () => (
     aria-hidden="true"
     focusable="false"
   >
-    <rect width="60" height="40" fill="#012169" />
-    <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="8" />
-    <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" strokeWidth="4" />
-    <path d="M30,0 V40 M0,20 H60" stroke="#fff" strokeWidth="13" />
-    <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" strokeWidth="8" />
+    <rect width="60" height="40" fill="#B22234" />
+    {[1, 3, 5, 7, 9, 11].map((i) => (
+      <rect key={i} y={(40 / 13) * i} width="60" height={40 / 13} fill="#fff" />
+    ))}
+    <rect width="26" height={(40 / 13) * 7} fill="#3C3B6E" />
+    {[
+      [4, 4], [12, 4], [20, 4],
+      [8, 10], [16, 10],
+      [4, 16], [12, 16], [20, 16],
+    ].map(([cx, cy], i) => (
+      <circle key={i} cx={cx} cy={cy} r="1.4" fill="#fff" />
+    ))}
   </svg>
 );
 
@@ -45,7 +53,7 @@ const Langtoggle = () => {
         title={t.ui.langToggle.spanish}
         aria-label={t.ui.langToggle.spanish}
       >
-        <SpainFlag />
+        <ArgentinaFlag />
       </button>
       <button
         type="button"
@@ -56,7 +64,7 @@ const Langtoggle = () => {
         title={t.ui.langToggle.english}
         aria-label={t.ui.langToggle.english}
       >
-        <UKFlag />
+        <USAFlag />
       </button>
     </div>
   );

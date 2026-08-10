@@ -17,7 +17,7 @@ const Headermain = ({ theme, settheme }) => {
     { label: t.ui.nav.home, section: "home", path: "/" },
     { label: t.ui.nav.projects, section: "projects", path: "/" },
     { label: t.ui.nav.experience, section: "experience", path: "/" },
-    { label: t.ui.nav.services, section: "services", path: "/services" },
+    { label: t.ui.nav.services, section: "services", path: "/" },
     { label: t.ui.nav.skills, section: "skills", path: "/" },
     { label: t.ui.nav.contact, section: "contact", path: "/" },
   ];

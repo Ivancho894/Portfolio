@@ -1,6 +1,6 @@
 const meta = {
     title: "Iván Serralta — Desarrollador de SaaS con IA | Claude · RAG · Multi-tenant",
-    description: "Construyo productos de IA multi-tenant — bots de WhatsApp con Claude + RAG y configuradores de productos a medida con Stripe. Actualmente entregando para clientes en Argentina y Australia."
+    description: "Desarrollador Full Stack con 4 años de experiencia construyendo sistemas de IA en producción — bots de WhatsApp multi-tenant con Claude + RAG y configuradores de productos a medida con Stripe. Abierto a roles de Software Engineer."
 };
 
 const introdata = {
@@ -16,14 +16,33 @@ const introdata = {
 
 const dataabout = {
     title: "Sobre mí",
-    aboutme: "Desarrollador Full Stack construyendo SaaS de IA en producción. Entrego productos de IA multi-tenant end-to-end — bots de WhatsApp potenciados por Claude + RAG y configuradores de productos a medida con Stripe. Actualmente trabajando para clientes en Argentina y Australia. Dos casos en producción, ambos entregados desde el alcance hasta el deploy: TimonChat (plataforma de IA para WhatsApp) y Edge Workshop (configurador de productos a medida)."
+    aboutme: "Desarrollador Full Stack con 4 años de experiencia construyendo sistemas de IA en producción. Entrego productos de IA multi-tenant end-to-end — bots de WhatsApp potenciados por Claude + RAG y configuradores de productos a medida con Stripe. Dos casos en producción, ambos entregados desde el alcance hasta el deploy: TimonChat (plataforma de IA para WhatsApp) y Edge Workshop (configurador de productos a medida). Abierto a roles remotos, contratos como contractor o posiciones full-time. Idiomas: español (nativo), inglés (C2 Proficient — certificado IELTS)."
 };
 
 const workExperience = [
     {
+        "position": "Fundador & Desarrollador Principal",
+        "company": "TimonChat (producto propio)",
+        "period": "2026 - Presente",
+        "icon": "./flag-for-argentina.svg",
+        "points": [
+            "Construí y desplegué una plataforma de IA multi-tenant para WhatsApp sobre Meta WhatsApp Cloud API, manejando conversaciones y reservas reales de clientes end-to-end.",
+            "Pipeline de IA en dos pasos: GPT-4.1-mini clasifica la intención y recupera contexto vía RAG (Qdrant); Claude Sonnet genera respuestas con una personalidad configurable por tenant.",
+            "Ingeniería de confiabilidad: tool-calling determinístico contra PostgreSQL para disponibilidad/precios (el LLM nunca afirma datos), idempotencia de webhooks, colas de reintentos y derivación a humanos ante intención de compra.",
+            "Calidad: evals con LLM-as-judge sobre un set dorado de conversaciones para detectar regresiones antes del deploy."
+        ],
+        "location": "Remoto",
+        "techStack": {
+            "backEnd": ["Node.js", "TypeScript", "Supabase", "PostgreSQL"],
+            "ai": ["Claude API", "OpenAI API", "Qdrant (RAG)"],
+            "apis": ["Meta WhatsApp Cloud API"],
+        },
+        info: "https://github.com/Ivancho894/timonchat-showcase/blob/main/README.md"
+    },
+    {
         "position": "CTO Interino & Desarrollador Full Stack",
         "company": "OnlyGenius",
-        "period": "Mayo 2025 - Junio 2026",
+        "period": "Mayo 2025 - Mayo 2026",
         "icon": "./flag-for-argentina.svg",
         "points": [
             "Lideré la construcción desde cero de todo el ecosistema SaaS de OnlyGenius, cubriendo backend, frontend, automatización e infraestructura.",
@@ -154,6 +173,12 @@ const workExperience = [
 
 const worktimeline = [
     {
+        jobtitle: "Fundador & Desarrollador Principal",
+        where: "TimonChat, Remoto",
+        date: "2026 - Presente",
+        description: "SaaS de IA multi-tenant propio: asistentes de WhatsApp con Claude + RAG, en producción."
+    },
+    {
         jobtitle: "CTO Interino & Desarrollador Full Stack",
         where: "OnlyGenius, Remoto",
         date: "2025 - 2026",
@@ -198,28 +223,16 @@ const skills = [
 
 const services = [
     {
-        title: "SaaS y Aplicaciones Web",
-        description: "Desarrollo de producto end-to-end: dashboards, paneles de administración, MVPs y plataformas SaaS escalables, desde la arquitectura hasta el deploy."
+        title: "Sistemas de IA y Automatización",
+        description: "Agentes de IA y chatbots multi-tenant, pipelines de RAG con Qdrant, orquestación multi-modelo (Claude + GPT) e integraciones nativas de WhatsApp que reemplazan flujos manuales con automatización de nivel productivo."
     },
     {
-        title: "Automatización y Sistemas de IA",
-        description: "Agentes de IA, chatbots, automatización de flujos de trabajo, pipelines con n8n e integraciones inteligentes que eliminan el trabajo manual."
+        title: "Desarrollo SaaS Full-Stack",
+        description: "Dashboards, paneles de administración y MVPs construidos con Next.js, React y Node.js — desde la arquitectura hasta producción, con PostgreSQL/Supabase, autenticación y control de acceso por roles incluidos."
     },
     {
-        title: "Trading y FinTech",
-        description: "Dashboards de trading en tiempo real, integraciones MT4/MT5, bots, conectividad con Interactive Brokers y sistemas de pago."
-    },
-    {
-        title: "E-commerce y Marketplaces",
-        description: "Tiendas Shopify, integraciones con marketplaces (Carrefour, Decathlon, Worten), sincronización omnicanal y automatización de pagos."
-    },
-    {
-        title: "Cloud y DevOps",
-        description: "Infraestructura AWS, pipelines de CI/CD, contenedores con Docker, monitoreo y arquitectura cloud escalable."
-    },
-    {
-        title: "CTO como Servicio",
-        description: "Liderazgo técnico para equipos en crecimiento: revisiones de arquitectura, contratación, documentación y decisiones tecnológicas estratégicas."
+        title: "Integraciones y Pagos",
+        description: "Integraciones con APIs de terceros, facturación y checkout con Stripe, automatización de marketplaces y e-commerce, e infraestructura cloud en AWS (Lambda, EC2, S3, CI/CD)."
     },
 ];
 
@@ -227,7 +240,7 @@ const dataportfolio = [
     {
         title: "TimonChat — Bot de IA para Ventas y Reservas en WhatsApp",
         role: "Fundador & Desarrollador Full Stack",
-        description: "Plataforma SaaS multi-tenant construida desde cero. Pipeline de IA en dos pasos: GPT-4.1-mini clasifica la intención y recupera contexto vía RAG (Qdrant), y Claude Sonnet genera respuestas con personalidad configurable por tenant. Detecta intención de compra y deriva a humanos automáticamente. Desplegado y operativo sobre Meta WhatsApp Cloud API. Primer piloto: UluWind, una escuela de wingfoil con venta de equipos de deportes acuáticos en Córdoba, Argentina.",
+        description: "Plataforma SaaS multi-tenant construida desde cero. Pipeline de IA en dos pasos: GPT-4.1-mini clasifica la intención y recupera contexto vía RAG (Qdrant), y Claude Sonnet genera respuestas con personalidad configurable por tenant. Detecta intención de compra y deriva a humanos automáticamente. Desplegado y operativo sobre Meta WhatsApp Cloud API. Actualmente en etapa piloto, validando con usuarios tempranos en el sector de deportes y servicios.",
         skills: [
             "Node.js",
             "Supabase",
@@ -287,7 +300,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "hello@ivanserralta.com",
     YOUR_FONE: "+54 3541 566295",
-    description: "Abierto a proyectos freelance, colaboraciones a largo plazo y servicios de CTO-as-a-Service. Hablemos."
+    description: "Abierto a roles de Software Engineer — remoto, contractor o full-time. Hablemos."
 };
 
 const socialprofiles = {
@@ -328,7 +341,7 @@ const ui = {
         home: "Inicio",
         projects: "Proyectos",
         experience: "Experiencia",
-        services: "Servicios",
+        services: "Especialidades",
         skills: "Habilidades",
         contact: "Contacto",
         fullTimeline: "Trayectoria Completa",
@@ -338,12 +351,12 @@ const ui = {
         titleLine1: "DESARROLLADOR",
         titleLine2: "FULL STACK",
         tagline: "Construyendo SaaS de IA en producción.",
-        description: "Construyo productos de IA multi-tenant — bots de WhatsApp con Claude + RAG y configuradores de productos a medida con Stripe. Actualmente entregando para clientes en Argentina y Australia.",
+        description: "Construyo productos de IA multi-tenant — bots de WhatsApp con Claude + RAG y configuradores de productos a medida con Stripe.",
         ctaPrimary: "Hablemos",
         ctaSecondary: "Ver proyectos",
         stats: [
-            { number: "+5", label: ["AÑOS DE", "EXPERIENCIA"] },
-            { number: "+20", label: ["PROYECTOS", "COMPLETADOS"] },
+            { number: "4", label: ["AÑOS DE", "EXPERIENCIA"] },
+            { number: "3", label: ["PRODUCTOS EN", "PRODUCCIÓN"] },
             { number: "3", label: ["PAÍSES", "TRABAJADOS"] },
         ],
         cards: [
@@ -354,16 +367,15 @@ const ui = {
     sections: {
         projects: ["PROYECTOS", "RECIENTES"],
         experience: ["EXPERIENCIA", "LABORAL"],
-        services: ["QUÉ", "CONSTRUYO"],
+        services: ["ÁREAS DE", "ESPECIALIDAD"],
         skills: ["STACK", "TECNOLÓGICO"],
         contact: ["VAMOS A", "HABLAR"],
     },
     buttons: {
         viewFullTimeline: "Ver trayectoria completa",
-        seeAllServices: "Ver todos los servicios",
     },
     profile: {
-        available: "Disponible para trabajar",
+        available: "Abierto a roles de Software Engineer",
         bio: "Construyendo SaaS de IA en producción — bots de WhatsApp multi-tenant con Claude + RAG y configuradores de productos a medida con Stripe.",
     },
     timeline: {
@@ -396,325 +408,11 @@ const ui = {
         email: "Email:",
         phone: "Teléfono:",
     },
-    servicesPage: {
-        metaTitle: "Servicios",
-        metaDescription: "Catálogo de servicios de desarrollo SaaS, automatización, trading, e-commerce y DevOps.",
-        eyebrow: "Servicios",
-        heroTitle: "Construyo sistemas que automatizan negocios.",
-        heroText: "Diseño y automatizo productos digitales end-to-end: desde MVPs SaaS hasta infraestructura cloud y automatizaciones de trading.",
-        emailBtn: "Envíame un email",
-        pastWork: "Ver trabajos anteriores",
-        benefits: "Beneficios",
-        technologies: "Tecnologías",
-        askAddons: "Consultar por complementos",
-        modalTitle: "Ponete en contacto",
-        modalSubtitle: "Escribime un email y te respondo dentro de las 24 horas.",
-        modalDivider: "¿o preferís una llamada?",
-        modalCall: "Agendar una llamada gratuita de 15 minutos",
-        modalClose: "Cerrar",
-    },
     langToggle: {
         label: "Idioma",
         spanish: "Español",
         english: "English",
     },
-};
-
-const serviceCatalog = [
-    {
-        id: "saas",
-        icon: "🧩",
-        title: "SaaS y Aplicaciones Web",
-        subtitle: "Desarrollo de plataformas SaaS y dashboards de administración completos.",
-        services: [
-            {
-                name: "Desarrollo de Dashboards SaaS",
-                description:
-                    "Implementación de dashboards en Next.js con autenticación, métricas clave, suscripciones y herramientas de administración.",
-                benefits: [
-                    "Login seguro con gestión de usuarios",
-                    "Panel de métricas en tiempo real",
-                    "Facturación recurrente integrada con Stripe",
-                ],
-                technologies: ["Next.js", "Firebase", "Stripe"],
-            },
-            {
-                name: "Panel de Administración a Medida",
-                description:
-                    "Control interno con gestión de roles, permisos y reportes adaptados a tu operación.",
-                benefits: [
-                    "Roles avanzados y auditoría",
-                    "Reportes exportables",
-                    "Onboarding guiado para equipos",
-                ],
-                technologies: ["React", "Node.js", "Prisma", "PostgreSQL"],
-            },
-            {
-                name: "MVP SaaS desde Cero",
-                description: "Prototipo funcional lanzado en menos de 3 semanas.",
-                benefits: [
-                    "Arquitectura escalable desde el día uno",
-                    "Entrega continua y documentación",
-                    "Incluye pipelines de CI/CD y monitoreo",
-                ],
-                technologies: ["Next.js", "Node.js", "AWS", "Prisma"],
-            },
-        ],
-        footer: {
-            focus: "Enfocado en startups, agencias y empresas sin CTO.",
-            cta: "Agendar una llamada",
-        },
-    },
-    {
-        id: "automation",
-        icon: "⚙️",
-        title: "Automatización y APIs",
-        subtitle: "Integraciones seguras para reducir tareas repetitivas y conectar tus sistemas.",
-        services: [
-            {
-                name: "Integraciones de APIs REST / WebSocket",
-                description:
-                    "Conectá plataformas como Stripe, Shopify, MercadoPago o MetaTrader con tu producto.",
-                benefits: [
-                    "Logs centralizados y manejo de errores",
-                    "Autenticación segura y escalable",
-                    "Monitoreo continuo de las integraciones",
-                ],
-                technologies: ["Node.js", "Python", "Firebase"],
-            },
-            {
-                name: "Automatización de Flujos SaaS",
-                description:
-                    "Sincronizá CRM, facturación y notificaciones con tareas programadas y webhooks.",
-                benefits: [
-                    "Ahorro de tiempo en tareas repetitivas",
-                    "Menos errores humanos",
-                    "Trazabilidad completa de los procesos",
-                ],
-                technologies: ["Node.js", "cron jobs", "n8n", "Zapier"],
-            },
-            {
-                name: "Microservicios y Scripts a Medida",
-                description:
-                    "Automatizaciones personalizadas listas para correr en AWS Lambda o contenedores.",
-                benefits: [
-                    "Escalado automático",
-                    "Alertas y métricas integradas",
-                    "Mantenimiento simple",
-                ],
-                technologies: ["AWS", "Python", "Node.js"],
-            },
-        ],
-        footer: {
-            focus: "Beneficios: ahorro de tiempo, menos errores y trazabilidad total.",
-            cta: "Pedir presupuesto",
-        },
-    },
-    {
-        id: "trading",
-        icon: "💸",
-        title: "Soluciones de Trading y FinTech",
-        subtitle: "Sistemas automatizados de trading y gestión de cuentas con métricas en vivo.",
-        services: [
-            {
-                name: "Integración con MetaTrader (MT4/MT5)",
-                description:
-                    "Bridge seguro para ejecutar operaciones desde la web o el backend en tus cuentas de trading.",
-                benefits: [
-                    "Ejecución en milisegundos",
-                    "Logs y auditoría por operación",
-                    "Soporte multi-cuenta",
-                ],
-                technologies: ["MetaApi", "MT4", "MT5", "Node.js"],
-            },
-            {
-                name: "Dashboard de Control de Fondeo y Métricas",
-                description:
-                    "Dashboard estilo FTMO con balance, equity, drawdown y objetivos personalizados.",
-                benefits: [
-                    "Alertas en tiempo real",
-                    "Dashboards responsive",
-                    "Reportes descargables",
-                ],
-                technologies: ["Next.js", "AWS", "PostgreSQL"],
-            },
-            {
-                name: "Bot de Trading a Medida",
-                description:
-                    "Estrategias automatizadas en Python o Node.js con indicadores técnicos y control de riesgo.",
-                benefits: [
-                    "Backtesting con datos históricos",
-                    "Gestión de riesgo configurable",
-                    "Deploy automatizado",
-                ],
-                technologies: ["Python", "Node.js", "AWS Lambda"],
-            },
-        ],
-        footer: {
-            focus: "Ideal para traders, brokers y startups fintech.",
-            cta: "Agendar una llamada",
-        },
-    },
-    {
-        id: "ecommerce",
-        icon: "🛍️",
-        title: "Automatización de E-commerce y Marketplaces",
-        subtitle: "Conectá tus tiendas con sistemas externos para automatizar pagos, inventario y notificaciones.",
-        services: [
-            {
-                name: "Integración Shopify / Mirakl",
-                description:
-                    "Vinculá tu e-commerce con ERP, CRM u otros sistemas para centralizar la información.",
-                benefits: [
-                    "Catálogo sincronizado",
-                    "Actualización automática de inventario",
-                    "Pedidos unificados",
-                ],
-                technologies: ["Shopify API", "Node.js", "Firebase"],
-            },
-            {
-                name: "Automatización de Pagos y Envíos",
-                description:
-                    "Configurá flujos con Stripe, MercadoPago y PayPal para pagos, facturas y notificaciones.",
-                benefits: [
-                    "Confirmación de pagos en tiempo real",
-                    "Alertas de inventario",
-                    "Emails transaccionales",
-                ],
-                technologies: ["Stripe", "MercadoPago", "PayPal"],
-            },
-            {
-                name: "Gestión Centralizada de Catálogo",
-                description:
-                    "Administrá productos y pedidos desde un único panel con roles y permisos.",
-                benefits: [
-                    "Curva de aprendizaje mínima",
-                    "Control multi-tienda",
-                    "Historial y trazabilidad",
-                ],
-                technologies: ["Next.js", "Node.js", "PostgreSQL"],
-            },
-        ],
-        footer: {
-            focus: "Stack sugerido: Node.js, Next.js, Shopify API, MercadoPago API, Stripe, Firebase.",
-            cta: "Pedir presupuesto",
-        },
-    },
-    {
-        id: "devops",
-        icon: "🧠",
-        title: "DevOps e Infraestructura Cloud",
-        subtitle: "Entornos escalables, seguros y automatizados, listos para producción.",
-        services: [
-            {
-                name: "Setup Completo de AWS",
-                description:
-                    "Infraestructura con Lambda, EC2, S3, RDS y pipelines de CI/CD listos para tu equipo.",
-                benefits: [
-                    "Infraestructura como código",
-                    "Seguridad y backups automatizados",
-                    "Monitoreo con CloudWatch",
-                ],
-                technologies: ["AWS", "CloudFormation", "GitHub Actions"],
-            },
-            {
-                name: "Deploys Automatizados",
-                description:
-                    "Pipelines para Vercel, Docker o Railway con rollbacks y revisión previa al release.",
-                benefits: [
-                    "Entrega continua",
-                    "Versionado y aprobaciones",
-                    "Observabilidad integrada",
-                ],
-                technologies: ["Docker", "Railway", "Vercel"],
-            },
-            {
-                name: "Monitoreo, Logs y Backups",
-                description:
-                    "Implementación de dashboards, alertas y backups automatizados para mantener tu uptime alto.",
-                benefits: [
-                    "Alertas proactivas",
-                    "Historial de logs centralizado",
-                    "Recuperación ante desastres",
-                ],
-                technologies: ["CloudWatch", "Grafana", "AWS Backup"],
-            },
-        ],
-        footer: {
-            focus: "Stack: AWS, Railway, GitHub Actions, Docker, CloudWatch.",
-            cta: "Agendar una llamada",
-        },
-    },
-    {
-        id: "consulting",
-        icon: "👨‍💼",
-        title: "Consultoría y Liderazgo Técnico",
-        subtitle: "Acompañamiento técnico para founders y equipos que necesitan dirección.",
-        services: [
-            {
-                name: "CTO-as-a-Service",
-                description:
-                    "Mentoría técnica continua para definir el roadmap, contratar talento y escalar productos.",
-                benefits: [
-                    "Reuniones semanales a medida",
-                    "Seguimiento de OKRs técnicos",
-                    "Red de partners y proveedores",
-                ],
-                technologies: ["Notion", "Linear", "Slack"],
-            },
-            {
-                name: "Revisión de Arquitectura",
-                description:
-                    "Auditoría de código y arquitectura para identificar riesgos y oportunidades.",
-                benefits: [
-                    "Informe ejecutivo con hallazgos",
-                    "Prioridades claras y plan de acción",
-                    "Sesión de revisión con tu equipo",
-                ],
-                technologies: ["AWS", "Next.js", "Node.js"],
-            },
-            {
-                name: "Planificación de Roadmap",
-                description:
-                    "Diseño de un roadmap técnico con estimaciones, hitos y dependencias.",
-                benefits: [
-                    "Workshops colaborativos",
-                    "Roadmap en herramientas colaborativas",
-                    "Seguimiento quincenal",
-                ],
-                technologies: ["Notion", "Miro", "Jira"],
-            },
-        ],
-        footer: {
-            focus: "Ideal para founders, startups sin equipo técnico y agencias.",
-            cta: "Agendar una llamada",
-        },
-    },
-];
-
-const serviceExtras = {
-    title: "Extras / Complementos Opcionales",
-    icon: "🌐",
-    description:
-        "Complementos perfectos para ampliar tu proyecto o preparar un roadmap de mejoras.",
-    services: [
-        {
-            name: "Configuración de Autenticación Segura",
-            technologies: ["Firebase", "Auth0", "JWT"],
-        },
-        {
-            name: "Notificaciones Push Multicanal",
-            technologies: ["FCM", "OneSignal"],
-        },
-        {
-            name: "Dashboards Responsive y UI a Medida",
-            technologies: ["Tailwind CSS", "shadcn/ui"],
-        },
-        {
-            name: "Integraciones con Google Sheets / Notion / CRM",
-            technologies: ["Google Sheets API", "Notion API", "Zapier"],
-        },
-    ],
 };
 
 export {
@@ -732,7 +430,5 @@ export {
     socialprofils,
     workExperience,
     logotext,
-    ui,
-    serviceCatalog,
-    serviceExtras
+    ui
 };
