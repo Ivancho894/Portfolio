@@ -14,7 +14,7 @@ const ProfileCard = () => {
         <h2 className="profile-name">Iván Serralta</h2>
         <div className="profile-badge">
           <span className="badge-dot"></span>
-          <span className="badge-text">Available for work</span>
+          <span className="badge-text">Open to Software Engineer roles</span>
         </div>
         <p className="profile-bio">
           Building AI SaaS in production — multi-tenant WhatsApp bots with Claude + RAG, and custom product configurators with Stripe.

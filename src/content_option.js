@@ -1,6 +1,6 @@
 const meta = {
     title: "Ivan Serralta — AI SaaS Developer | Claude · RAG · Multi-tenant",
-    description: "I build multi-tenant AI products — WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Currently shipping for clients in Argentina and Australia."
+    description: "Full Stack Developer with 4 years of experience building production AI systems — multi-tenant WhatsApp bots with Claude + RAG, and custom product configurators with Stripe. Open to Software Engineer roles."
 };
 
 const introdata = {
@@ -16,14 +16,33 @@ const introdata = {
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Full Stack Developer building AI SaaS in production. I ship multi-tenant AI products end-to-end — WhatsApp bots powered by Claude + RAG, and custom product configurators with Stripe. Currently delivering for clients in Argentina and Australia. Two production cases, both shipped from scope to deployment: TimonChat (AI WhatsApp platform) and Edge Workshop (custom product configurator)."
+    aboutme: "Full Stack Developer with 4 years of experience building production AI systems. I ship multi-tenant AI products end-to-end — WhatsApp bots powered by Claude + RAG, and custom product configurators with Stripe. Two production cases, both shipped from scope to deployment: TimonChat (AI WhatsApp platform) and Edge Workshop (custom product configurator). Open to remote roles, contractor engagements, or full-time positions. Languages: Spanish (native), English (C2 Proficient — IELTS certified)."
 };
 
 const workExperience = [
     {
+        "position": "Founder & Lead Developer",
+        "company": "TimonChat (own product)",
+        "period": "2026 - Present",
+        "icon": "./flag-for-argentina.svg",
+        "points": [
+            "Built and deployed a multi-tenant WhatsApp AI platform on Meta WhatsApp Cloud API, handling real customer conversations and bookings end to end.",
+            "Two-step AI pipeline: GPT-4.1-mini classifies intent and retrieves context via RAG (Qdrant); Claude Sonnet generates responses with a configurable personality per tenant.",
+            "Reliability engineering: deterministic tool-calling against PostgreSQL for availability/pricing (the LLM never asserts data), webhook idempotency, retry queues, and human handoff on purchase intent.",
+            "Quality: LLM-as-judge evals over a golden conversation set to catch regressions before deploy."
+        ],
+        "location": "Remote",
+        "techStack": {
+            "backEnd": ["Node.js", "TypeScript", "Supabase", "PostgreSQL"],
+            "ai": ["Claude API", "OpenAI API", "Qdrant (RAG)"],
+            "apis": ["Meta WhatsApp Cloud API"],
+        },
+        info: "https://github.com/Ivancho894/timonchat-showcase/blob/main/README.md"
+    },
+    {
         "position": "Acting CTO & Full Stack Developer",
         "company": "OnlyGenius",
-        "period": "May 2025 - June 2026",
+        "period": "May 2025 - May 2026",
         "icon": "./flag-for-argentina.svg",
         "points": [
             "Led the greenfield build of OnlyGenius's entire SaaS ecosystem, covering backend, frontend, automation, and infrastructure from scratch.",
@@ -154,6 +173,12 @@ const workExperience = [
 
 const worktimeline = [
     {
+        jobtitle: "Founder & Lead Developer",
+        where: "TimonChat, Remote",
+        date: "2026 - Present",
+        description: "Own multi-tenant AI SaaS: WhatsApp assistants with Claude + RAG, live in production."
+    },
+    {
         jobtitle: "Acting CTO & Full Stack Developer",
         where: "OnlyGenius, Remote",
         date: "2025 - 2026",
@@ -198,28 +223,16 @@ const skills = [
 
 const services = [
     {
-        title: "SaaS & Web Apps",
-        description: "End-to-end product development: dashboards, admin panels, MVPs, and scalable SaaS platforms from architecture to deployment."
+        title: "AI Systems & Automation",
+        description: "Multi-tenant AI agents and chatbots, RAG pipelines with Qdrant, multi-model orchestration (Claude + GPT), and WhatsApp-native integrations that replace manual workflows with production-grade automation."
     },
     {
-        title: "Automation & AI Systems",
-        description: "AI agents, chatbots, workflow automation, n8n pipelines, and intelligent integrations that eliminate manual work."
+        title: "Full-Stack SaaS Development",
+        description: "Dashboards, admin panels, and MVPs built on Next.js, React, and Node.js — from architecture to production, with PostgreSQL/Supabase, authentication, and role-based access built in."
     },
     {
-        title: "Trading & FinTech",
-        description: "Real-time trading dashboards, MT4/MT5 integrations, bots, Interactive Brokers connectivity, and payment systems."
-    },
-    {
-        title: "E-commerce & Marketplaces",
-        description: "Shopify stores, marketplace integrations (Carrefour, Decathlon, Worten), omnichannel sync, and payment automation."
-    },
-    {
-        title: "Cloud & DevOps",
-        description: "AWS infrastructure, CI/CD pipelines, containerization with Docker, monitoring, and scalable cloud architecture."
-    },
-    {
-        title: "CTO as a Service",
-        description: "Technical leadership for growing teams: architecture reviews, hiring, documentation, and strategic technology decisions."
+        title: "Integrations & Payments",
+        description: "Third-party API integrations, Stripe billing and checkout flows, marketplace and e-commerce automation, and AWS cloud infrastructure (Lambda, EC2, S3, CI/CD)."
     },
 ];
 
@@ -227,7 +240,7 @@ const dataportfolio = [
     {
         title: "TimonChat — AI Sales & Reservations Bot for WhatsApp",
         role: "Founder & Full Stack Developer",
-        description: "Multi-tenant SaaS platform built from scratch. Two-step AI pipeline: GPT-4.1-mini classifies intent and retrieves context via RAG (Qdrant), Claude Sonnet generates responses with configurable personality per tenant. Detects purchase intent and hands off to humans automatically. Deployed and operational on Meta WhatsApp Cloud API. First pilot: UluWind, a wingfoiling school with watersports equipment sales in Córdoba, Argentina.",
+        description: "Multi-tenant SaaS platform built from scratch. Two-step AI pipeline: GPT-4.1-mini classifies intent and retrieves context via RAG (Qdrant), Claude Sonnet generates responses with configurable personality per tenant. Detects purchase intent and hands off to humans automatically. Deployed and operational on Meta WhatsApp Cloud API. Currently in pilot stage, validating with early users in the sports & services sector.",
         skills: [
             "Node.js",
             "Supabase",
@@ -287,7 +300,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "hello@ivanserralta.com",
     YOUR_FONE: "+54 3541 566295",
-    description: "Open to new opportunities — available for freelance projects, contractor engagements, and full-time positions. Let's talk."
+    description: "Open to Software Engineer roles — remote, contractor, or full-time. Let's talk."
 };
 
 const socialprofiles = {
