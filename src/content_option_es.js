@@ -348,7 +348,7 @@ const ui = {
         certificates: "Certificados",
     },
     hero: {
-        titleLine1: "DESARROLLADOR",
+        titleLine1: "INGENIERO",
         titleLine2: "FULL STACK",
         tagline: "Construyendo SaaS de IA en producción.",
         description: "Construyo productos de IA multi-tenant — bots de WhatsApp con Claude + RAG y configuradores de productos a medida con Stripe.",
@@ -369,7 +369,7 @@ const ui = {
         experience: ["EXPERIENCIA", "LABORAL"],
         services: ["ÁREAS DE", "ESPECIALIDAD"],
         skills: ["STACK", "TECNOLÓGICO"],
-        contact: ["VAMOS A", "HABLAR"],
+        contact: ["CONECTEMOS", "AHORA"],
     },
     buttons: {
         viewFullTimeline: "Ver trayectoria completa",
